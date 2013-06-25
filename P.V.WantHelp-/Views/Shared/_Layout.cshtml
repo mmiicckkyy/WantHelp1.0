@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="~/Css/Mediaquery.css" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+        <!--    CHAT GENERAL     -->
+        <link rel="stylesheet" type="text/css" href="~/Css/ChatGeneral.css">         
+        <script type="text/javascript" src="~/Js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                /*****************Opcion para ocultar y mostrar el div*******************/
+                $("#enlaceIn").click(function () {
+                    $("#content").show();
+                    $("#enlaceIn").hide();
+                    $("#enlaceOut").show();
+                });
+                $("#enlaceOut").click(function () {
+                    $("#content").hide();
+                    $("#enlaceOut").hide();
+                    $("#enlaceIn").show();
+                });
+
+                /**************Codigo para ocultar el div cuando se haga click en 
+                 *              cualquier otro lado del documento****************/
+
+                $(document.body).click(function (e) {
+                    var $box = $('#content');
+                    if (e.target.id !== 'content' && e.target.id !== 'enlaceIn' && !$.contains($box[0], e.target)) {
+                        $("#content").hide();
+                        $("#enlaceOut").hide();
+                        $("#enlaceIn").show();
+                    }
+                });
+            });
+        </script>
+        <!-- FIN CHAT GENERAL    -->
+
+    </head>
+    <body>
+        <header>
+            <!---->
+            <div class="content-wrapper">
+                <div class="titulo">
+                    PLATAFORMA VIRTUAL
+                </div>                                
+            </div>
+            <div class="divImagen">
+                <img  class="imagenindex" src="~/Image/ro2.png" />
+            </div>
+            <div class="float-right">                    
+                <nav>
+                    <ul class="menu">
+                        <li class="menu1">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="menu2">@Html.ActionLink("About", "About", "Home")</li>
+                        <li class="menu3">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li class="menu4">@Html.ActionLink("Cursos", "cursos", "VistasProyecto")</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="body">
+             @RenderSection("featured", required: false)            
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <!--<div class="imgflotante"><img src="~/Image/robotLeft.png" style="position:relative; height:120px; width:90px;"></div>-->
+        <div class="menuFloat-container">
+            <span class="conectatecon">Conectate con</span>
+            <div class="cell facebook last-cell" title="Facebook">
+                <em>Facebook</em>
+            </div>
+            <div class="cell twitter" title="Twitter">
+                <em>Twitter</em>
+            </div>
+            <div class="cell chat" id="enlaceIn" title="Charlar"></div>
+            <div class="cell chat" id="enlaceOut" title="Charlar"></div>       
+        </div>
+        <div id="content">
+            <!--------inicio del chat--------->            
+            <div class="Contactos">
+                    <div class="icon">
+                        <h1><img src="~/imagenesChat/Chat_gf.png" style="width:40px;height:40px; margin-left:-20px;"/>Conectados </h1>                    
+                    </div>
+                    <div class="conectados">
+                            <ul>
+                                <li><b><img src="~/imagenesChat/user.png" />  Jose   </b></li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/vyesterday.png" />  Manuel   </b></li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/vlmonth.png" />  Maria   </b></li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/vtoday.png" />  Jael   </b></li>
+                            </ul>
+                    </div>
+                    </div>
+                    <div class="mensajes">
+                        <div class="icon1">
+                            <h1><img src="~/imagenesChat/op.png" style="width:40px;height:40px; margin:6px 0px 0px 10px;"/>Chat</h1>                    
+                        </div>
+                        <div id="campoDeMensajes">
+                            <ul>
+                                <li><b><img src="~/imagenesChat/user.png" />  Jose:   </b>holassssssssssssssssss</li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/vyesterday.png" />  Manuel:   </b>Como estas?</li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/user.png" />  Jose:   </b>biennnnnnnnnnnnnn</li>
+                            </ul>
+                            <ul>
+                                <li><b><img src="~/imagenesChat/vyesterday.png" />  Manuel:   </b> y tu?</li>
+                            </ul>
+                        </div>            
+                    </div>
+                <div class="CampoDeTexto">
+                <input id="texto" type="text" placeholder="mensaje" style="width:254px; height: 20px;box-shadow: 0 5px 5px #1b3a4d, 0 0px 0 #000 inset;margin:5px 1px 0px 0px;border-radius: 15px 0px 15px 0px;background-color:#fff;border:1px solid #B3B3B3;"/>            
+            </div>           
+            <!--------fin inicio del chat--------->
+        </div>
+        <footer>
+            <div class="divpie">
+              <p class="texpie">&copy; @DateTime.Now.Year - By  Amelia | Alfredo | Miguel</p>
+            </div>                
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

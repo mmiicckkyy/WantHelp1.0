@@ -1,0 +1,138 @@
+
+﻿/*
+﻿codigo comntado
+﻿#content{   
+    position: fixed;    
+    top: 0;
+    right: 0;
+    background: transparent;
+    width: 268px;
+    height:99%;
+    margin-top:3px;
+    margin-right:2px;
+    margin-bottom:5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    display: none;
+	border:1px solid #000;
+    border-radius:5px;
+}
+#enlaceIn{
+    background:no-repeat;
+    background-image: url('../Image/mensj1.png');
+    background-position:center;
+    cursor:pointer;
+}
+#enlaceIn:hover{
+    background:no-repeat;
+    background-image: url('../Image/mensj2.png');
+    background-position:center;
+    cursor:pointer;
+}
+#enlaceOut{
+    background:no-repeat;
+    background-image: url('../Image/mensj1.png');
+    display: none;
+    background-position:center;
+    cursor: pointer;
+}
+#enlaceOut:hover{
+    background:no-repeat;
+    background-image: url('../Image/mensj2.png');
+    background-position:center;
+    cursor: pointer;
+}*/
+/** para el chat**/
+#content{   
+    position: fixed;    
+    top: 0;
+    right: 0;
+    background: transparent;    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    display: none;    
+    height:99%;
+    width: 268px;
+}
+
+#enlaceIn{
+    background:no-repeat;
+    background-image: url('../Image/mensj1.png');
+    background-position:center;
+    cursor:pointer;
+}
+#enlaceIn:hover{
+    background:no-repeat;
+    background-image: url('../Image/mensj2.png');
+    background-position:center;
+    cursor:pointer;
+}
+#enlaceOut{
+    background:no-repeat;
+    background-image: url('../Image/mensj1.png');
+    display: none;
+    background-position:center;
+    cursor: pointer;
+}
+#enlaceOut:hover{
+    background:no-repeat;
+    background-image: url('../Image/mensj2.png');
+    background-position:center;
+    cursor: pointer;
+}
+/*chat*/
+.mensajes, .Contactos {
+   /* float:left;*/
+    display:inline-block;    
+    vertical-align:central;
+    margin-top:0px;
+    margin-left:2px;
+    height:400px;
+    background:#B3B3B3;    
+    width:263px;
+}
+.mensajes{
+    margin-top:10px;
+    height:47%;
+    box-shadow: 0 1px 6px #1B3759;
+    overflow-x: hidden;
+    border-radius: 15px 0px 15px 0px;
+}
+.Contactos {
+    /*float:left;*/
+    margin-top:2px;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0 1px 6px #1B3759;
+    height:40%;
+}
+    .Contactos li {
+        list-style:none;
+        color:#06888d;
+    }
+.icon, .icon1{
+    margin-top:-20px;
+    width: 263px;
+    background:#1f3e4e;
+    border-color: #1f3e4e;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0 1px 6px #111315;
+    text-align: center;
+    height: 50px;
+    
+    
+    font-size:12px;
+}
+.icon1 h1, .icon h1 {
+   text-align:center;
+   color:#B3B3B3;    
+}
+.mensajes b {
+    color:#06888d;
+}
+.mensajes li {
+    list-style:none;
+    color:#e4820a;
+}
+/*fin chat*/

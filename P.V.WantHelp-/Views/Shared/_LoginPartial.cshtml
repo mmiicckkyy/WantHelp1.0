@@ -1,0 +1,27 @@
+﻿
+@if (Request.IsAuthenticated) {
+    <script>
+        $(document).ready(function () {
+            $("#LoginOff").hide();
+            $(".sinsesion").hide();
+        })
+    </script>
+    <text>
+        Hola, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" }) <img src="~/imagenesChat/user.png" />
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()" class="LoginOn">Salir</a>
+        }
+    </text>
+} else {
+     <script>
+         $(document).ready(function () {
+             $("#LoginOn").show();
+         })
+    </script>
+    <ul>
+        <!--<li>@Html.ActionLink("Log in", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li>@Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>-->
+        
+    </ul>
+}
