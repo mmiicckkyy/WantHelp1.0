@@ -1285,7 +1285,7 @@ figure a:hover {
 .intro_text .bx-pager a.pager-active, .intro_text .bx-pager a.pager-link:hover {background-position:-15px -261px;background-color:#5eafcd;}
 
 
-/*aqui empieza de la barra deslizadora*/
+/*aqui empieza de la barra deslizadora par Google Chrome*/
 	::-webkit-scrollbar {
 		width: 13px;
 		height: 13px;
@@ -1305,4 +1305,4 @@ figure a:hover {
 	::-webkit-scrollbar-corner {
 background: -webkit-gradient(radial, 13 13, 23, 13 13, 15, from(lightgray), to(rgba(0,0,0,0)));
 }
-	/*aqui termina de la barra deslizadora*/
+/*aqui termina de la barra deslizadora Google Chrome*/
