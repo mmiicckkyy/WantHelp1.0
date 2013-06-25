@@ -239,9 +239,6 @@
     <Compile Include="Models\sesiones.cs">
       <DependentUpon>conexionModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>conexionModel1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Usuario.cs">
       <DependentUpon>conexionModel1.tt</DependentUpon>
     </Compile>

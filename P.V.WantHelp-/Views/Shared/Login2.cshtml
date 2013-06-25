@@ -2,8 +2,6 @@
     ViewBag.Title = "Login2";
 }
 
-<p style="margin:0 auto;text-align:center;font-size:18px;"><b>Login</b></p>
-
 @using (Html.BeginForm("Login","Account")) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)

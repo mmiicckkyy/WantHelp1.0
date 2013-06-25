@@ -1,6 +1,44 @@
 ﻿@{
     ViewBag.Title = "P.V.WantHelp";
 }
+<link rel="stylesheet" type="text/css" href="~/Css/ChatGeneral.css">
+<script type="text/javascript" src="~/Js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                /*********** Recuperar el ancho y alto dela pantalla (resolucion)***********/
+                //$("#content").css('width',$(window).width());
+                $("#contenedorlogin").css('height', '270px');
+
+                /*****************Un posible opcion para ocultar y mostrar el div*******************/
+                /*$('#enlaceIn').click(function(){
+                    $("#content").slideToggle();
+                });*/
+                /*****************Opcion para ocultar y mostrar el div*******************/
+                $("#enlaceIn").click(function () {
+                    $("#contenedorlogin").show();
+                    $("#enlaceIn").hide();
+                    $("#enlaceOut").show();
+                });
+                $("#enlaceOut").click(function () {
+                    $("#contenedorlogin").hide();
+                    $("#enlaceOut").hide();
+                    $("#enlaceIn").show();
+                });
+
+                /**************Codigo para ocultar el div cuando se haga click en 
+                 *              cualquier otro lado del documento****************/
+
+                $(document.body).click(function (e) {
+                    var $box = $('#contenedorlogin');
+                    if (e.target.id !== 'contenedorlogin' && e.target.id !== 'enlaceIn' && e.target.id !== 'enlaceOut' && !$.contains($box[0], e.target)) {
+                        $("#contenedorlogin").hide();
+                        $("#enlaceOut").hide();
+                        $("#enlaceIn").show();
+                    }
+                });
+            });
+        </script>
 
 <!-- Start WOWSlider.com HEAD section -->
 <link rel="stylesheet" type="text/css" href="~/Js/engine1/style.css" />
@@ -117,19 +155,21 @@
         </div>        
     </div>
     <div class="mainlogin">
-        <div class="formlogin" id="LoginOff">
+        <div id="enlaceIn" >Login</div>
+        <div id="enlaceOut" >Login</div>
+		<div id="contenedorlogin">
           @Html.Partial("Login2") 
         </div>
         <div class="sectorcursos">
-            <div style="width:90%;border:1px solid #000;margin:0 auto;"></div>
+            <div style="width:90%;border:1px solid #000;margin:0 auto; margin-top:5px;"></div>
             <p style="margin:0 auto;text-align:center;font-size:18px;"><b>Cursos</b></p>
             <ul>
-                <li><a href="#">Seminario</a></li>
-                <li><a href="#">Fisica</a></li>
-                <li><a href="#">Calculo</a></li>
-                <li><a href="#">Estadistica</a></li>
-                <li><a href="#">Seminario de Sistemas</a></li>
-                <li><a href="#">Programacion I</a></li>
+                <li><a href="#">Visual Basic</a></li>
+                <li><a href="#">Visual C#</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Jquery</a></li>
+                <li><a href="#">Css3</a></li>
+                <li><a href="#">Html5</a></li>
                 <li><a href="#">Base de Datos</a></li>
                 <li><a href="#">Redes</a></li>
             </ul>

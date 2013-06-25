@@ -1,4 +1,4 @@
-﻿// Default code generation is disabled for model 'D:\PlataformaVirtual\PlataformaVirtual\P.V.WantHelp-\P.V.WantHelp-\Models\conexionModel1.edmx'. 
+﻿// Default code generation is disabled for model 'E:\WantHelp1.0\WantHelp1.0\P.V.WantHelp-\Models\conexionModel1.edmx'. 
 // To enable default code generation, change the value of the 'Code Generation Strategy' designer
 // property to an alternate value. This property is available in the Properties Window when the model is
 // open in the designer.

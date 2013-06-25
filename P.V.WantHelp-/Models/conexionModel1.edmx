@@ -19,17 +19,16 @@
           <EntitySet Name="Respuestas" EntityType="PlataformaVirtualModel.Store.Respuestas" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Respuestas_Chat" EntityType="PlataformaVirtualModel.Store.Respuestas_Chat" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="sesiones" EntityType="PlataformaVirtualModel.Store.sesiones" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sysdiagrams" EntityType="PlataformaVirtualModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Usuario" EntityType="PlataformaVirtualModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="webpages_Membership" EntityType="PlataformaVirtualModel.Store.webpages_Membership" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="webpages_OAuthMembership" EntityType="PlataformaVirtualModel.Store.webpages_OAuthMembership" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="webpages_Roles" EntityType="PlataformaVirtualModel.Store.webpages_Roles" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="webpages_UsersInRoles" EntityType="PlataformaVirtualModel.Store.webpages_UsersInRoles" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK__archivos__idSe__6754599E" Association="PlataformaVirtualModel.Store.FK__archivos__idSe__6754599E">
+          <AssociationSet Name="FK__archivos__idSe__5165187F" Association="PlataformaVirtualModel.Store.FK__archivos__idSe__5165187F">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="archivos" EntitySet="archivos" />
           </AssociationSet>
-          <AssociationSet Name="FK__archivos__idUs__66603565" Association="PlataformaVirtualModel.Store.FK__archivos__idUs__66603565">
+          <AssociationSet Name="FK__archivos__idUs__5070F446" Association="PlataformaVirtualModel.Store.FK__archivos__idUs__5070F446">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="archivos" EntitySet="archivos" />
           </AssociationSet>
@@ -37,79 +36,79 @@
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="avatar" EntitySet="avatar" />
           </AssociationSet>
-          <AssociationSet Name="FK__Comentari__Id_Re__3F466844" Association="PlataformaVirtualModel.Store.FK__Comentari__Id_Re__3F466844">
+          <AssociationSet Name="FK__Comentari__Id_Re__6754599E" Association="PlataformaVirtualModel.Store.FK__Comentari__Id_Re__6754599E">
             <End Role="Respuestas" EntitySet="Respuestas" />
             <End Role="Comentarios" EntitySet="Comentarios" />
           </AssociationSet>
-          <AssociationSet Name="FK__Comentari__Id_Us__3E52440B" Association="PlataformaVirtualModel.Store.FK__Comentari__Id_Us__3E52440B">
+          <AssociationSet Name="FK__Comentari__Id_Us__66603565" Association="PlataformaVirtualModel.Store.FK__Comentari__Id_Us__66603565">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Comentarios" EntitySet="Comentarios" />
           </AssociationSet>
-          <AssociationSet Name="FK__inscripcio__idCu__440B1D61" Association="PlataformaVirtualModel.Store.FK__inscripcio__idCu__440B1D61">
+          <AssociationSet Name="FK__inscripcio__idCu__2E1BDC42" Association="PlataformaVirtualModel.Store.FK__inscripcio__idCu__2E1BDC42">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="inscripcion" EntitySet="inscripcion" />
           </AssociationSet>
-          <AssociationSet Name="FK__inscripcio__idUs__44FF419A" Association="PlataformaVirtualModel.Store.FK__inscripcio__idUs__44FF419A">
+          <AssociationSet Name="FK__inscripcio__idUs__2F10007B" Association="PlataformaVirtualModel.Store.FK__inscripcio__idUs__2F10007B">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="inscripcion" EntitySet="inscripcion" />
           </AssociationSet>
-          <AssociationSet Name="FK__Material__Id_Cur__2F10007B" Association="PlataformaVirtualModel.Store.FK__Material__Id_Cur__2F10007B">
+          <AssociationSet Name="FK__Material__Id_Cur__571DF1D5" Association="PlataformaVirtualModel.Store.FK__Material__Id_Cur__571DF1D5">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="Material" EntitySet="Material" />
           </AssociationSet>
-          <AssociationSet Name="FK__Material__Id_Usu__2E1BDC42" Association="PlataformaVirtualModel.Store.FK__Material__Id_Usu__2E1BDC42">
+          <AssociationSet Name="FK__Material__Id_Usu__5629CD9C" Association="PlataformaVirtualModel.Store.FK__Material__Id_Usu__5629CD9C">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Material" EntitySet="Material" />
           </AssociationSet>
-          <AssociationSet Name="FK__mensajes__idSe__4F7CD00D" Association="PlataformaVirtualModel.Store.FK__mensajes__idSe__4F7CD00D">
+          <AssociationSet Name="FK__mensajes__idSe__398D8EEE" Association="PlataformaVirtualModel.Store.FK__mensajes__idSe__398D8EEE">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="mensajes" EntitySet="mensajes" />
           </AssociationSet>
-          <AssociationSet Name="FK__mensajes__idUs__4E88ABD4" Association="PlataformaVirtualModel.Store.FK__mensajes__idUs__4E88ABD4">
+          <AssociationSet Name="FK__mensajes__idUs__38996AB5" Association="PlataformaVirtualModel.Store.FK__mensajes__idUs__38996AB5">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="mensajes" EntitySet="mensajes" />
           </AssociationSet>
-          <AssociationSet Name="FK__Preguntas__Id_Us__33D4B598" Association="PlataformaVirtualModel.Store.FK__Preguntas__Id_Us__33D4B598">
+          <AssociationSet Name="FK__Preguntas__Id_Us__5BE2A6F2" Association="PlataformaVirtualModel.Store.FK__Preguntas__Id_Us__5BE2A6F2">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Preguntas" EntitySet="Preguntas" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacio__idRes__5AEE82B9" Association="PlataformaVirtualModel.Store.FK__puntuacio__idRes__5AEE82B9">
+          <AssociationSet Name="FK__puntuacio__idRes__44FF419A" Association="PlataformaVirtualModel.Store.FK__puntuacio__idRes__44FF419A">
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
             <End Role="puntuacionRes" EntitySet="puntuacionRes" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__idMe__60A75C0F" Association="PlataformaVirtualModel.Store.FK__puntuacion__idMe__60A75C0F">
+          <AssociationSet Name="FK__puntuacion__idMe__4AB81AF0" Association="PlataformaVirtualModel.Store.FK__puntuacion__idMe__4AB81AF0">
             <End Role="mensajes" EntitySet="mensajes" />
             <End Role="puntuacionChat" EntitySet="puntuacionChat" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__IdUs__5BE2A6F2" Association="PlataformaVirtualModel.Store.FK__puntuacion__IdUs__5BE2A6F2">
+          <AssociationSet Name="FK__puntuacion__IdUs__45F365D3" Association="PlataformaVirtualModel.Store.FK__puntuacion__IdUs__45F365D3">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="puntuacionRes" EntitySet="puntuacionRes" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__IdUs__619B8048" Association="PlataformaVirtualModel.Store.FK__puntuacion__IdUs__619B8048">
+          <AssociationSet Name="FK__puntuacion__IdUs__4BAC3F29" Association="PlataformaVirtualModel.Store.FK__puntuacion__IdUs__4BAC3F29">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="puntuacionChat" EntitySet="puntuacionChat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__Id_Pr__398D8EEE" Association="PlataformaVirtualModel.Store.FK__Respuesta__Id_Pr__398D8EEE">
+          <AssociationSet Name="FK__Respuesta__Id_Pr__619B8048" Association="PlataformaVirtualModel.Store.FK__Respuesta__Id_Pr__619B8048">
             <End Role="Preguntas" EntitySet="Preguntas" />
             <End Role="Respuestas" EntitySet="Respuestas" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__Id_Us__38996AB5" Association="PlataformaVirtualModel.Store.FK__Respuesta__Id_Us__38996AB5">
+          <AssociationSet Name="FK__Respuesta__Id_Us__60A75C0F" Association="PlataformaVirtualModel.Store.FK__Respuesta__Id_Us__60A75C0F">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Respuestas" EntitySet="Respuestas" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__idCha__5629CD9C" Association="PlataformaVirtualModel.Store.FK__Respuesta__idCha__5629CD9C">
+          <AssociationSet Name="FK__Respuesta__idCha__403A8C7D" Association="PlataformaVirtualModel.Store.FK__Respuesta__idCha__403A8C7D">
             <End Role="mensajes" EntitySet="mensajes" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuestas__idSe__5535A963" Association="PlataformaVirtualModel.Store.FK__Respuestas__idSe__5535A963">
+          <AssociationSet Name="FK__Respuestas__idSe__3F466844" Association="PlataformaVirtualModel.Store.FK__Respuestas__idSe__3F466844">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuestas__idUs__5441852A" Association="PlataformaVirtualModel.Store.FK__Respuestas__idUs__5441852A">
+          <AssociationSet Name="FK__Respuestas__idUs__3E52440B" Association="PlataformaVirtualModel.Store.FK__Respuestas__idUs__3E52440B">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
-          <AssociationSet Name="FK__sesiones__idCu__49C3F6B7" Association="PlataformaVirtualModel.Store.FK__sesiones__idCu__49C3F6B7">
+          <AssociationSet Name="FK__sesiones__idCu__33D4B598" Association="PlataformaVirtualModel.Store.FK__sesiones__idCu__33D4B598">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="sesiones" EntitySet="sesiones" />
           </AssociationSet>
@@ -250,16 +249,6 @@
           <Property Name="descriocion" Type="text" Nullable="false" />
           <Property Name="idCu" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
         <EntityType Name="Usuario">
           <Key>
             <PropertyRef Name="Id_Usu" />
@@ -312,7 +301,7 @@
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="RoleId" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__archivos__idSe__6754599E">
+        <Association Name="FK__archivos__idSe__5165187F">
           <End Role="sesiones" Type="PlataformaVirtualModel.Store.sesiones" Multiplicity="1" />
           <End Role="archivos" Type="PlataformaVirtualModel.Store.archivos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -324,7 +313,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__archivos__idUs__66603565">
+        <Association Name="FK__archivos__idUs__5070F446">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="archivos" Type="PlataformaVirtualModel.Store.archivos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -348,7 +337,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Comentari__Id_Re__3F466844">
+        <Association Name="FK__Comentari__Id_Re__6754599E">
           <End Role="Respuestas" Type="PlataformaVirtualModel.Store.Respuestas" Multiplicity="1" />
           <End Role="Comentarios" Type="PlataformaVirtualModel.Store.Comentarios" Multiplicity="*" />
           <ReferentialConstraint>
@@ -360,7 +349,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Comentari__Id_Us__3E52440B">
+        <Association Name="FK__Comentari__Id_Us__66603565">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="Comentarios" Type="PlataformaVirtualModel.Store.Comentarios" Multiplicity="*" />
           <ReferentialConstraint>
@@ -372,7 +361,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__inscripcio__idCu__440B1D61">
+        <Association Name="FK__inscripcio__idCu__2E1BDC42">
           <End Role="Cursos" Type="PlataformaVirtualModel.Store.Cursos" Multiplicity="1" />
           <End Role="inscripcion" Type="PlataformaVirtualModel.Store.inscripcion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -384,7 +373,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__inscripcio__idUs__44FF419A">
+        <Association Name="FK__inscripcio__idUs__2F10007B">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="inscripcion" Type="PlataformaVirtualModel.Store.inscripcion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -396,7 +385,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Material__Id_Cur__2F10007B">
+        <Association Name="FK__Material__Id_Cur__571DF1D5">
           <End Role="Cursos" Type="PlataformaVirtualModel.Store.Cursos" Multiplicity="1" />
           <End Role="Material" Type="PlataformaVirtualModel.Store.Material" Multiplicity="*" />
           <ReferentialConstraint>
@@ -408,7 +397,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Material__Id_Usu__2E1BDC42">
+        <Association Name="FK__Material__Id_Usu__5629CD9C">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="Material" Type="PlataformaVirtualModel.Store.Material" Multiplicity="*" />
           <ReferentialConstraint>
@@ -420,7 +409,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__mensajes__idSe__4F7CD00D">
+        <Association Name="FK__mensajes__idSe__398D8EEE">
           <End Role="sesiones" Type="PlataformaVirtualModel.Store.sesiones" Multiplicity="1" />
           <End Role="mensajes" Type="PlataformaVirtualModel.Store.mensajes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -432,7 +421,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__mensajes__idUs__4E88ABD4">
+        <Association Name="FK__mensajes__idUs__38996AB5">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="mensajes" Type="PlataformaVirtualModel.Store.mensajes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -444,7 +433,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Preguntas__Id_Us__33D4B598">
+        <Association Name="FK__Preguntas__Id_Us__5BE2A6F2">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="Preguntas" Type="PlataformaVirtualModel.Store.Preguntas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -456,7 +445,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacio__idRes__5AEE82B9">
+        <Association Name="FK__puntuacio__idRes__44FF419A">
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Store.Respuestas_Chat" Multiplicity="1" />
           <End Role="puntuacionRes" Type="PlataformaVirtualModel.Store.puntuacionRes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -468,7 +457,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__idMe__60A75C0F">
+        <Association Name="FK__puntuacion__idMe__4AB81AF0">
           <End Role="mensajes" Type="PlataformaVirtualModel.Store.mensajes" Multiplicity="1" />
           <End Role="puntuacionChat" Type="PlataformaVirtualModel.Store.puntuacionChat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -480,7 +469,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__IdUs__5BE2A6F2">
+        <Association Name="FK__puntuacion__IdUs__45F365D3">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="puntuacionRes" Type="PlataformaVirtualModel.Store.puntuacionRes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -492,7 +481,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__IdUs__619B8048">
+        <Association Name="FK__puntuacion__IdUs__4BAC3F29">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="puntuacionChat" Type="PlataformaVirtualModel.Store.puntuacionChat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -504,7 +493,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__Id_Pr__398D8EEE">
+        <Association Name="FK__Respuesta__Id_Pr__619B8048">
           <End Role="Preguntas" Type="PlataformaVirtualModel.Store.Preguntas" Multiplicity="1" />
           <End Role="Respuestas" Type="PlataformaVirtualModel.Store.Respuestas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -516,7 +505,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__Id_Us__38996AB5">
+        <Association Name="FK__Respuesta__Id_Us__60A75C0F">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="Respuestas" Type="PlataformaVirtualModel.Store.Respuestas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -528,7 +517,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__idCha__5629CD9C">
+        <Association Name="FK__Respuesta__idCha__403A8C7D">
           <End Role="mensajes" Type="PlataformaVirtualModel.Store.mensajes" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Store.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -540,7 +529,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuestas__idSe__5535A963">
+        <Association Name="FK__Respuestas__idSe__3F466844">
           <End Role="sesiones" Type="PlataformaVirtualModel.Store.sesiones" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Store.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -552,7 +541,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuestas__idUs__5441852A">
+        <Association Name="FK__Respuestas__idUs__3E52440B">
           <End Role="Usuario" Type="PlataformaVirtualModel.Store.Usuario" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Store.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -564,7 +553,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__sesiones__idCu__49C3F6B7">
+        <Association Name="FK__sesiones__idCu__33D4B598">
           <End Role="Cursos" Type="PlataformaVirtualModel.Store.Cursos" Multiplicity="1" />
           <End Role="sesiones" Type="PlataformaVirtualModel.Store.sesiones" Multiplicity="*" />
           <ReferentialConstraint>
@@ -593,7 +582,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PlataformaVirtualModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="PlataformaVirtualEntities" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="archivos" EntityType="PlataformaVirtualModel.archivos" />
           <EntitySet Name="avatar" EntityType="PlataformaVirtualModel.avatar" />
           <EntitySet Name="Comentarios" EntityType="PlataformaVirtualModel.Comentarios" />
@@ -607,17 +596,16 @@
           <EntitySet Name="Respuestas" EntityType="PlataformaVirtualModel.Respuestas" />
           <EntitySet Name="Respuestas_Chat" EntityType="PlataformaVirtualModel.Respuestas_Chat" />
           <EntitySet Name="sesiones" EntityType="PlataformaVirtualModel.sesiones" />
-          <EntitySet Name="sysdiagrams" EntityType="PlataformaVirtualModel.sysdiagrams" />
           <EntitySet Name="Usuario" EntityType="PlataformaVirtualModel.Usuario" />
           <EntitySet Name="webpages_Membership" EntityType="PlataformaVirtualModel.webpages_Membership" />
           <EntitySet Name="webpages_OAuthMembership" EntityType="PlataformaVirtualModel.webpages_OAuthMembership" />
           <EntitySet Name="webpages_Roles" EntityType="PlataformaVirtualModel.webpages_Roles" />
           <EntitySet Name="webpages_UsersInRoles" EntityType="PlataformaVirtualModel.webpages_UsersInRoles" />
-          <AssociationSet Name="FK__archivos__idSe__6754599E" Association="PlataformaVirtualModel.FK__archivos__idSe__6754599E">
+          <AssociationSet Name="FK__archivos__idSe__5165187F" Association="PlataformaVirtualModel.FK__archivos__idSe__5165187F">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="archivos" EntitySet="archivos" />
           </AssociationSet>
-          <AssociationSet Name="FK__archivos__idUs__66603565" Association="PlataformaVirtualModel.FK__archivos__idUs__66603565">
+          <AssociationSet Name="FK__archivos__idUs__5070F446" Association="PlataformaVirtualModel.FK__archivos__idUs__5070F446">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="archivos" EntitySet="archivos" />
           </AssociationSet>
@@ -625,79 +613,79 @@
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="avatar" EntitySet="avatar" />
           </AssociationSet>
-          <AssociationSet Name="FK__Comentari__Id_Re__3F466844" Association="PlataformaVirtualModel.FK__Comentari__Id_Re__3F466844">
+          <AssociationSet Name="FK__Comentari__Id_Re__6754599E" Association="PlataformaVirtualModel.FK__Comentari__Id_Re__6754599E">
             <End Role="Respuestas" EntitySet="Respuestas" />
             <End Role="Comentarios" EntitySet="Comentarios" />
           </AssociationSet>
-          <AssociationSet Name="FK__Comentari__Id_Us__3E52440B" Association="PlataformaVirtualModel.FK__Comentari__Id_Us__3E52440B">
+          <AssociationSet Name="FK__Comentari__Id_Us__66603565" Association="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Comentarios" EntitySet="Comentarios" />
           </AssociationSet>
-          <AssociationSet Name="FK__inscripcio__idCu__440B1D61" Association="PlataformaVirtualModel.FK__inscripcio__idCu__440B1D61">
+          <AssociationSet Name="FK__inscripcio__idCu__2E1BDC42" Association="PlataformaVirtualModel.FK__inscripcio__idCu__2E1BDC42">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="inscripcion" EntitySet="inscripcion" />
           </AssociationSet>
-          <AssociationSet Name="FK__Material__Id_Cur__2F10007B" Association="PlataformaVirtualModel.FK__Material__Id_Cur__2F10007B">
+          <AssociationSet Name="FK__Material__Id_Cur__571DF1D5" Association="PlataformaVirtualModel.FK__Material__Id_Cur__571DF1D5">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="Material" EntitySet="Material" />
           </AssociationSet>
-          <AssociationSet Name="FK__sesiones__idCu__49C3F6B7" Association="PlataformaVirtualModel.FK__sesiones__idCu__49C3F6B7">
+          <AssociationSet Name="FK__sesiones__idCu__33D4B598" Association="PlataformaVirtualModel.FK__sesiones__idCu__33D4B598">
             <End Role="Cursos" EntitySet="Cursos" />
             <End Role="sesiones" EntitySet="sesiones" />
           </AssociationSet>
-          <AssociationSet Name="FK__inscripcio__idUs__44FF419A" Association="PlataformaVirtualModel.FK__inscripcio__idUs__44FF419A">
+          <AssociationSet Name="FK__inscripcio__idUs__2F10007B" Association="PlataformaVirtualModel.FK__inscripcio__idUs__2F10007B">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="inscripcion" EntitySet="inscripcion" />
           </AssociationSet>
-          <AssociationSet Name="FK__Material__Id_Usu__2E1BDC42" Association="PlataformaVirtualModel.FK__Material__Id_Usu__2E1BDC42">
+          <AssociationSet Name="FK__Material__Id_Usu__5629CD9C" Association="PlataformaVirtualModel.FK__Material__Id_Usu__5629CD9C">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Material" EntitySet="Material" />
           </AssociationSet>
-          <AssociationSet Name="FK__mensajes__idSe__4F7CD00D" Association="PlataformaVirtualModel.FK__mensajes__idSe__4F7CD00D">
+          <AssociationSet Name="FK__mensajes__idSe__398D8EEE" Association="PlataformaVirtualModel.FK__mensajes__idSe__398D8EEE">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="mensajes" EntitySet="mensajes" />
           </AssociationSet>
-          <AssociationSet Name="FK__mensajes__idUs__4E88ABD4" Association="PlataformaVirtualModel.FK__mensajes__idUs__4E88ABD4">
+          <AssociationSet Name="FK__mensajes__idUs__38996AB5" Association="PlataformaVirtualModel.FK__mensajes__idUs__38996AB5">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="mensajes" EntitySet="mensajes" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__idMe__60A75C0F" Association="PlataformaVirtualModel.FK__puntuacion__idMe__60A75C0F">
+          <AssociationSet Name="FK__puntuacion__idMe__4AB81AF0" Association="PlataformaVirtualModel.FK__puntuacion__idMe__4AB81AF0">
             <End Role="mensajes" EntitySet="mensajes" />
             <End Role="puntuacionChat" EntitySet="puntuacionChat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__idCha__5629CD9C" Association="PlataformaVirtualModel.FK__Respuesta__idCha__5629CD9C">
+          <AssociationSet Name="FK__Respuesta__idCha__403A8C7D" Association="PlataformaVirtualModel.FK__Respuesta__idCha__403A8C7D">
             <End Role="mensajes" EntitySet="mensajes" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Preguntas__Id_Us__33D4B598" Association="PlataformaVirtualModel.FK__Preguntas__Id_Us__33D4B598">
+          <AssociationSet Name="FK__Preguntas__Id_Us__5BE2A6F2" Association="PlataformaVirtualModel.FK__Preguntas__Id_Us__5BE2A6F2">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Preguntas" EntitySet="Preguntas" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__Id_Pr__398D8EEE" Association="PlataformaVirtualModel.FK__Respuesta__Id_Pr__398D8EEE">
+          <AssociationSet Name="FK__Respuesta__Id_Pr__619B8048" Association="PlataformaVirtualModel.FK__Respuesta__Id_Pr__619B8048">
             <End Role="Preguntas" EntitySet="Preguntas" />
             <End Role="Respuestas" EntitySet="Respuestas" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__IdUs__619B8048" Association="PlataformaVirtualModel.FK__puntuacion__IdUs__619B8048">
+          <AssociationSet Name="FK__puntuacion__IdUs__4BAC3F29" Association="PlataformaVirtualModel.FK__puntuacion__IdUs__4BAC3F29">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="puntuacionChat" EntitySet="puntuacionChat" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacio__idRes__5AEE82B9" Association="PlataformaVirtualModel.FK__puntuacio__idRes__5AEE82B9">
+          <AssociationSet Name="FK__puntuacio__idRes__44FF419A" Association="PlataformaVirtualModel.FK__puntuacio__idRes__44FF419A">
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
             <End Role="puntuacionRes" EntitySet="puntuacionRes" />
           </AssociationSet>
-          <AssociationSet Name="FK__puntuacion__IdUs__5BE2A6F2" Association="PlataformaVirtualModel.FK__puntuacion__IdUs__5BE2A6F2">
+          <AssociationSet Name="FK__puntuacion__IdUs__45F365D3" Association="PlataformaVirtualModel.FK__puntuacion__IdUs__45F365D3">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="puntuacionRes" EntitySet="puntuacionRes" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuesta__Id_Us__38996AB5" Association="PlataformaVirtualModel.FK__Respuesta__Id_Us__38996AB5">
+          <AssociationSet Name="FK__Respuesta__Id_Us__60A75C0F" Association="PlataformaVirtualModel.FK__Respuesta__Id_Us__60A75C0F">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Respuestas" EntitySet="Respuestas" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuestas__idSe__5535A963" Association="PlataformaVirtualModel.FK__Respuestas__idSe__5535A963">
+          <AssociationSet Name="FK__Respuestas__idSe__3F466844" Association="PlataformaVirtualModel.FK__Respuestas__idSe__3F466844">
             <End Role="sesiones" EntitySet="sesiones" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
-          <AssociationSet Name="FK__Respuestas__idUs__5441852A" Association="PlataformaVirtualModel.FK__Respuestas__idUs__5441852A">
+          <AssociationSet Name="FK__Respuestas__idUs__3E52440B" Association="PlataformaVirtualModel.FK__Respuestas__idUs__3E52440B">
             <End Role="Usuario" EntitySet="Usuario" />
             <End Role="Respuestas_Chat" EntitySet="Respuestas_Chat" />
           </AssociationSet>
@@ -716,8 +704,8 @@
           <Property Name="idSe" Type="Int32" Nullable="false" />
           <Property Name="urlBase" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
           <Property Name="urlHost" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
-          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__archivos__idSe__6754599E" FromRole="archivos" ToRole="sesiones" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__archivos__idUs__66603565" FromRole="archivos" ToRole="Usuario" />
+          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__archivos__idSe__5165187F" FromRole="archivos" ToRole="sesiones" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__archivos__idUs__5070F446" FromRole="archivos" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="avatar">
           <Key>
@@ -740,8 +728,8 @@
           <Property Name="Id_Usu" Type="Int32" Nullable="false" />
           <Property Name="Id_Respuestas" Type="Int32" Nullable="false" />
           <Property Name="conteo2" Type="Int32" />
-          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Re__3F466844" FromRole="Comentarios" ToRole="Respuestas" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__3E52440B" FromRole="Comentarios" ToRole="Usuario" />
+          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Re__6754599E" FromRole="Comentarios" ToRole="Respuestas" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565" FromRole="Comentarios" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Cursos">
           <Key>
@@ -754,9 +742,9 @@
           <Property Name="Fecha_F" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="urlBase" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
           <Property Name="urlHost" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
-          <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idCu__440B1D61" FromRole="Cursos" ToRole="inscripcion" />
-          <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Cur__2F10007B" FromRole="Cursos" ToRole="Material" />
-          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__sesiones__idCu__49C3F6B7" FromRole="Cursos" ToRole="sesiones" />
+          <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idCu__2E1BDC42" FromRole="Cursos" ToRole="inscripcion" />
+          <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Cur__571DF1D5" FromRole="Cursos" ToRole="Material" />
+          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__sesiones__idCu__33D4B598" FromRole="Cursos" ToRole="sesiones" />
         </EntityType>
         <EntityType Name="inscripcion">
           <Key>
@@ -766,8 +754,8 @@
           <Property Name="idCu" Type="Int32" Nullable="false" />
           <Property Name="idUs" Type="Int32" Nullable="false" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__inscripcio__idCu__440B1D61" FromRole="inscripcion" ToRole="Cursos" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__44FF419A" FromRole="inscripcion" ToRole="Usuario" />
+          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__inscripcio__idCu__2E1BDC42" FromRole="inscripcion" ToRole="Cursos" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__2F10007B" FromRole="inscripcion" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Material">
           <Key>
@@ -779,8 +767,8 @@
           <Property Name="archivos" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
           <Property Name="urlBase" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
           <Property Name="urlHost" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
-          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__Material__Id_Cur__2F10007B" FromRole="Material" ToRole="Cursos" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__2E1BDC42" FromRole="Material" ToRole="Usuario" />
+          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__Material__Id_Cur__571DF1D5" FromRole="Material" ToRole="Cursos" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__5629CD9C" FromRole="Material" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="mensajes">
           <Key>
@@ -792,10 +780,10 @@
           <Property Name="estado" Type="Int32" Nullable="false" />
           <Property Name="mensaje" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__mensajes__idSe__4F7CD00D" FromRole="mensajes" ToRole="sesiones" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__mensajes__idUs__4E88ABD4" FromRole="mensajes" ToRole="Usuario" />
-          <NavigationProperty Name="puntuacionChat" Relationship="PlataformaVirtualModel.FK__puntuacion__idMe__60A75C0F" FromRole="mensajes" ToRole="puntuacionChat" />
-          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuesta__idCha__5629CD9C" FromRole="mensajes" ToRole="Respuestas_Chat" />
+          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__mensajes__idSe__398D8EEE" FromRole="mensajes" ToRole="sesiones" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__mensajes__idUs__38996AB5" FromRole="mensajes" ToRole="Usuario" />
+          <NavigationProperty Name="puntuacionChat" Relationship="PlataformaVirtualModel.FK__puntuacion__idMe__4AB81AF0" FromRole="mensajes" ToRole="puntuacionChat" />
+          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuesta__idCha__403A8C7D" FromRole="mensajes" ToRole="Respuestas_Chat" />
         </EntityType>
         <EntityType Name="Preguntas">
           <Key>
@@ -806,8 +794,8 @@
           <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Id_Usu" Type="Int32" Nullable="false" />
           <Property Name="conteo" Type="Int32" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Preguntas__Id_Us__33D4B598" FromRole="Preguntas" ToRole="Usuario" />
-          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Pr__398D8EEE" FromRole="Preguntas" ToRole="Respuestas" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Preguntas__Id_Us__5BE2A6F2" FromRole="Preguntas" ToRole="Usuario" />
+          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Pr__619B8048" FromRole="Preguntas" ToRole="Respuestas" />
         </EntityType>
         <EntityType Name="puntuacionChat">
           <Key>
@@ -816,8 +804,8 @@
           <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
           <Property Name="idMe" Type="Int32" Nullable="false" />
           <Property Name="IdUs" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__puntuacion__idMe__60A75C0F" FromRole="puntuacionChat" ToRole="mensajes" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__619B8048" FromRole="puntuacionChat" ToRole="Usuario" />
+          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__puntuacion__idMe__4AB81AF0" FromRole="puntuacionChat" ToRole="mensajes" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__4BAC3F29" FromRole="puntuacionChat" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="puntuacionRes">
           <Key>
@@ -826,8 +814,8 @@
           <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
           <Property Name="idRes" Type="Int32" Nullable="false" />
           <Property Name="IdUs" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__puntuacio__idRes__5AEE82B9" FromRole="puntuacionRes" ToRole="Respuestas_Chat" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__5BE2A6F2" FromRole="puntuacionRes" ToRole="Usuario" />
+          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__puntuacio__idRes__44FF419A" FromRole="puntuacionRes" ToRole="Respuestas_Chat" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__45F365D3" FromRole="puntuacionRes" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Respuestas">
           <Key>
@@ -839,9 +827,9 @@
           <Property Name="Id_Usu" Type="Int32" Nullable="false" />
           <Property Name="Id_Preguntas" Type="Int32" Nullable="false" />
           <Property Name="conteo2" Type="Int32" />
-          <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Re__3F466844" FromRole="Respuestas" ToRole="Comentarios" />
-          <NavigationProperty Name="Preguntas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Pr__398D8EEE" FromRole="Respuestas" ToRole="Preguntas" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Us__38996AB5" FromRole="Respuestas" ToRole="Usuario" />
+          <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Re__6754599E" FromRole="Respuestas" ToRole="Comentarios" />
+          <NavigationProperty Name="Preguntas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Pr__619B8048" FromRole="Respuestas" ToRole="Preguntas" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Us__60A75C0F" FromRole="Respuestas" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Respuestas_Chat">
           <Key>
@@ -853,10 +841,10 @@
           <Property Name="idUs" Type="Int32" Nullable="false" />
           <Property Name="mensaje" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__Respuesta__idCha__5629CD9C" FromRole="Respuestas_Chat" ToRole="mensajes" />
-          <NavigationProperty Name="puntuacionRes" Relationship="PlataformaVirtualModel.FK__puntuacio__idRes__5AEE82B9" FromRole="Respuestas_Chat" ToRole="puntuacionRes" />
-          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__Respuestas__idSe__5535A963" FromRole="Respuestas_Chat" ToRole="sesiones" />
-          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Respuestas__idUs__5441852A" FromRole="Respuestas_Chat" ToRole="Usuario" />
+          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__Respuesta__idCha__403A8C7D" FromRole="Respuestas_Chat" ToRole="mensajes" />
+          <NavigationProperty Name="puntuacionRes" Relationship="PlataformaVirtualModel.FK__puntuacio__idRes__44FF419A" FromRole="Respuestas_Chat" ToRole="puntuacionRes" />
+          <NavigationProperty Name="sesiones" Relationship="PlataformaVirtualModel.FK__Respuestas__idSe__3F466844" FromRole="Respuestas_Chat" ToRole="sesiones" />
+          <NavigationProperty Name="Usuario" Relationship="PlataformaVirtualModel.FK__Respuestas__idUs__3E52440B" FromRole="Respuestas_Chat" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="sesiones">
           <Key>
@@ -866,20 +854,10 @@
           <Property Name="titulo" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
           <Property Name="descriocion" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="idCu" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idSe__6754599E" FromRole="sesiones" ToRole="archivos" />
-          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__sesiones__idCu__49C3F6B7" FromRole="sesiones" ToRole="Cursos" />
-          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__mensajes__idSe__4F7CD00D" FromRole="sesiones" ToRole="mensajes" />
-          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuestas__idSe__5535A963" FromRole="sesiones" ToRole="Respuestas_Chat" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idSe__5165187F" FromRole="sesiones" ToRole="archivos" />
+          <NavigationProperty Name="Cursos" Relationship="PlataformaVirtualModel.FK__sesiones__idCu__33D4B598" FromRole="sesiones" ToRole="Cursos" />
+          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__mensajes__idSe__398D8EEE" FromRole="sesiones" ToRole="mensajes" />
+          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuestas__idSe__3F466844" FromRole="sesiones" ToRole="Respuestas_Chat" />
         </EntityType>
         <EntityType Name="Usuario">
           <Key>
@@ -892,17 +870,17 @@
           <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
           <Property Name="sexo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
           <Property Name="UserId" Type="Int32" />
-          <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idUs__66603565" FromRole="Usuario" ToRole="archivos" />
+          <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idUs__5070F446" FromRole="Usuario" ToRole="archivos" />
           <NavigationProperty Name="avatar" Relationship="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" FromRole="Usuario" ToRole="avatar" />
-          <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__3E52440B" FromRole="Usuario" ToRole="Comentarios" />
-          <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__44FF419A" FromRole="Usuario" ToRole="inscripcion" />
-          <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__2E1BDC42" FromRole="Usuario" ToRole="Material" />
-          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__mensajes__idUs__4E88ABD4" FromRole="Usuario" ToRole="mensajes" />
-          <NavigationProperty Name="Preguntas" Relationship="PlataformaVirtualModel.FK__Preguntas__Id_Us__33D4B598" FromRole="Usuario" ToRole="Preguntas" />
-          <NavigationProperty Name="puntuacionChat" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__619B8048" FromRole="Usuario" ToRole="puntuacionChat" />
-          <NavigationProperty Name="puntuacionRes" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__5BE2A6F2" FromRole="Usuario" ToRole="puntuacionRes" />
-          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Us__38996AB5" FromRole="Usuario" ToRole="Respuestas" />
-          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuestas__idUs__5441852A" FromRole="Usuario" ToRole="Respuestas_Chat" />
+          <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565" FromRole="Usuario" ToRole="Comentarios" />
+          <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__2F10007B" FromRole="Usuario" ToRole="inscripcion" />
+          <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__5629CD9C" FromRole="Usuario" ToRole="Material" />
+          <NavigationProperty Name="mensajes" Relationship="PlataformaVirtualModel.FK__mensajes__idUs__38996AB5" FromRole="Usuario" ToRole="mensajes" />
+          <NavigationProperty Name="Preguntas" Relationship="PlataformaVirtualModel.FK__Preguntas__Id_Us__5BE2A6F2" FromRole="Usuario" ToRole="Preguntas" />
+          <NavigationProperty Name="puntuacionChat" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__4BAC3F29" FromRole="Usuario" ToRole="puntuacionChat" />
+          <NavigationProperty Name="puntuacionRes" Relationship="PlataformaVirtualModel.FK__puntuacion__IdUs__45F365D3" FromRole="Usuario" ToRole="puntuacionRes" />
+          <NavigationProperty Name="Respuestas" Relationship="PlataformaVirtualModel.FK__Respuesta__Id_Us__60A75C0F" FromRole="Usuario" ToRole="Respuestas" />
+          <NavigationProperty Name="Respuestas_Chat" Relationship="PlataformaVirtualModel.FK__Respuestas__idUs__3E52440B" FromRole="Usuario" ToRole="Respuestas_Chat" />
         </EntityType>
         <EntityType Name="webpages_Membership">
           <Key>
@@ -946,7 +924,7 @@
           <Property Name="RoleId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="webpages_Roles" Relationship="PlataformaVirtualModel.fk_RoleId" FromRole="webpages_UsersInRoles" ToRole="webpages_Roles" />
         </EntityType>
-        <Association Name="FK__archivos__idSe__6754599E">
+        <Association Name="FK__archivos__idSe__5165187F">
           <End Role="sesiones" Type="PlataformaVirtualModel.sesiones" Multiplicity="1" />
           <End Role="archivos" Type="PlataformaVirtualModel.archivos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -958,7 +936,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__archivos__idUs__66603565">
+        <Association Name="FK__archivos__idUs__5070F446">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="archivos" Type="PlataformaVirtualModel.archivos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -982,7 +960,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Comentari__Id_Re__3F466844">
+        <Association Name="FK__Comentari__Id_Re__6754599E">
           <End Role="Respuestas" Type="PlataformaVirtualModel.Respuestas" Multiplicity="1" />
           <End Role="Comentarios" Type="PlataformaVirtualModel.Comentarios" Multiplicity="*" />
           <ReferentialConstraint>
@@ -994,7 +972,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Comentari__Id_Us__3E52440B">
+        <Association Name="FK__Comentari__Id_Us__66603565">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="Comentarios" Type="PlataformaVirtualModel.Comentarios" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1006,7 +984,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__inscripcio__idCu__440B1D61">
+        <Association Name="FK__inscripcio__idCu__2E1BDC42">
           <End Role="Cursos" Type="PlataformaVirtualModel.Cursos" Multiplicity="1" />
           <End Role="inscripcion" Type="PlataformaVirtualModel.inscripcion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1018,7 +996,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Material__Id_Cur__2F10007B">
+        <Association Name="FK__Material__Id_Cur__571DF1D5">
           <End Role="Cursos" Type="PlataformaVirtualModel.Cursos" Multiplicity="1" />
           <End Role="Material" Type="PlataformaVirtualModel.Material" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1030,7 +1008,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__sesiones__idCu__49C3F6B7">
+        <Association Name="FK__sesiones__idCu__33D4B598">
           <End Role="Cursos" Type="PlataformaVirtualModel.Cursos" Multiplicity="1" />
           <End Role="sesiones" Type="PlataformaVirtualModel.sesiones" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1042,7 +1020,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__inscripcio__idUs__44FF419A">
+        <Association Name="FK__inscripcio__idUs__2F10007B">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="inscripcion" Type="PlataformaVirtualModel.inscripcion" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1054,7 +1032,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Material__Id_Usu__2E1BDC42">
+        <Association Name="FK__Material__Id_Usu__5629CD9C">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="Material" Type="PlataformaVirtualModel.Material" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1066,7 +1044,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__mensajes__idSe__4F7CD00D">
+        <Association Name="FK__mensajes__idSe__398D8EEE">
           <End Role="sesiones" Type="PlataformaVirtualModel.sesiones" Multiplicity="1" />
           <End Role="mensajes" Type="PlataformaVirtualModel.mensajes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1078,7 +1056,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__mensajes__idUs__4E88ABD4">
+        <Association Name="FK__mensajes__idUs__38996AB5">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="mensajes" Type="PlataformaVirtualModel.mensajes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1090,7 +1068,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__idMe__60A75C0F">
+        <Association Name="FK__puntuacion__idMe__4AB81AF0">
           <End Role="mensajes" Type="PlataformaVirtualModel.mensajes" Multiplicity="1" />
           <End Role="puntuacionChat" Type="PlataformaVirtualModel.puntuacionChat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1102,7 +1080,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__idCha__5629CD9C">
+        <Association Name="FK__Respuesta__idCha__403A8C7D">
           <End Role="mensajes" Type="PlataformaVirtualModel.mensajes" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1114,7 +1092,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Preguntas__Id_Us__33D4B598">
+        <Association Name="FK__Preguntas__Id_Us__5BE2A6F2">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="Preguntas" Type="PlataformaVirtualModel.Preguntas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1126,7 +1104,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__Id_Pr__398D8EEE">
+        <Association Name="FK__Respuesta__Id_Pr__619B8048">
           <End Role="Preguntas" Type="PlataformaVirtualModel.Preguntas" Multiplicity="1" />
           <End Role="Respuestas" Type="PlataformaVirtualModel.Respuestas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1138,7 +1116,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__IdUs__619B8048">
+        <Association Name="FK__puntuacion__IdUs__4BAC3F29">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="puntuacionChat" Type="PlataformaVirtualModel.puntuacionChat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1150,7 +1128,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacio__idRes__5AEE82B9">
+        <Association Name="FK__puntuacio__idRes__44FF419A">
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Respuestas_Chat" Multiplicity="1" />
           <End Role="puntuacionRes" Type="PlataformaVirtualModel.puntuacionRes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1162,7 +1140,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__puntuacion__IdUs__5BE2A6F2">
+        <Association Name="FK__puntuacion__IdUs__45F365D3">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="puntuacionRes" Type="PlataformaVirtualModel.puntuacionRes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1174,7 +1152,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuesta__Id_Us__38996AB5">
+        <Association Name="FK__Respuesta__Id_Us__60A75C0F">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="Respuestas" Type="PlataformaVirtualModel.Respuestas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1186,7 +1164,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuestas__idSe__5535A963">
+        <Association Name="FK__Respuestas__idSe__3F466844">
           <End Role="sesiones" Type="PlataformaVirtualModel.sesiones" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1198,7 +1176,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Respuestas__idUs__5441852A">
+        <Association Name="FK__Respuestas__idUs__3E52440B">
           <End Role="Usuario" Type="PlataformaVirtualModel.Usuario" Multiplicity="1" />
           <End Role="Respuestas_Chat" Type="PlataformaVirtualModel.Respuestas_Chat" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1227,7 +1205,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PlataformaVirtualModelStoreContainer" CdmEntityContainer="PlataformaVirtualEntities">
+        <EntityContainerMapping StorageEntityContainer="PlataformaVirtualModelStoreContainer" CdmEntityContainer="Entities">
           <EntitySetMapping Name="archivos">
             <EntityTypeMapping TypeName="PlataformaVirtualModel.archivos">
               <MappingFragment StoreEntitySet="archivos">
@@ -1370,17 +1348,6 @@
                 <ScalarProperty Name="titulo" ColumnName="titulo" />
                 <ScalarProperty Name="descriocion" ColumnName="descriocion" />
                 <ScalarProperty Name="idCu" ColumnName="idCu" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="PlataformaVirtualModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
