@@ -13,10 +13,10 @@ namespace P.V.WantHelp_.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class PlataformaVirtualEntities : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public PlataformaVirtualEntities()
+            : base("name=PlataformaVirtualEntities")
         {
         }
     
@@ -38,6 +38,7 @@ namespace P.V.WantHelp_.Models
         public DbSet<Respuestas> Respuestas { get; set; }
         public DbSet<Respuestas_Chat> Respuestas_Chat { get; set; }
         public DbSet<sesiones> sesiones { get; set; }
+        public DbSet<sysdiagrams> sysdiagrams { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<webpages_Membership> webpages_Membership { get; set; }
         public DbSet<webpages_OAuthMembership> webpages_OAuthMembership { get; set; }

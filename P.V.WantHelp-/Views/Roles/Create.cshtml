@@ -12,16 +12,11 @@
     <fieldset>
         <legend>webpages_Roles</legend>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RoleId)
+        <div class="editor-label" style="visibility:hidden;">
+            @Html.LabelFor(model => model.RoleId)<a href="~/Views/Roles/Create.cshtml">~/Views/Roles/Create.cshtml</a>
         </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RoleId)
-            @Html.ValidationMessageFor(model => model.RoleId)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RoleName)
+       <div class="editor-label">
+            <p style="font:40px;">Nombre del Rol</p>
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.RoleName)
