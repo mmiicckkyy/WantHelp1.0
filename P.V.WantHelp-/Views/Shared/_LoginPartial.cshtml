@@ -2,10 +2,9 @@
 @if (Request.IsAuthenticated) {
     <script>
         $(document).ready(function () {
-            $("#enlaceIn").hide();
-            $("#enlaceOut").hide();
-            $("#contenedorlogin").hide();
+            
             $(".sinsesion").hide();
+            $(".ocultarlogin").hide();
         })
     </script>
     <text>
@@ -18,7 +17,7 @@
 } else {
      <script>
          $(document).ready(function () {
-             $("#enlaceIn").show();
+             $(".ocultarlogin").show();
          })
     </script>
     <ul>
