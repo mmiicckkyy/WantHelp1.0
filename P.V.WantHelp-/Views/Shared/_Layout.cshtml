@@ -20,6 +20,10 @@
             <div class="divImagen">
                 <img  class="imagenindex" src="~/Image/ro2.png" />
             </div>
+            
+        </header>
+        <div id="body">
+             @RenderSection("featured", required: false)            
             <div class="float-right">                    
                 <nav>
                     <ul class="menu">
@@ -30,9 +34,6 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <div id="body">
-             @RenderSection("featured", required: false)            
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
