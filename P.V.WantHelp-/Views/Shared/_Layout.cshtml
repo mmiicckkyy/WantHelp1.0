@@ -8,13 +8,6 @@
         <link rel="stylesheet" type="text/css" href="~/Css/Mediaquery.css" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
-
-        <!--    CHAT GENERAL     -->
-                 
-        <script type="text/javascript" src="~/Js/jquery.min.js"></script>
-        
-        <!-- FIN CHAT GENERAL    -->
-
     </head>
     <body>
         <header>
@@ -45,7 +38,7 @@
             </section>
         </div>
         <!--<div class="imgflotante"><img src="~/Image/robotLeft.png" style="position:relative; height:120px; width:90px;"></div>-->
-        <div class="menuFloat-container">
+        <!----<div class="menuFloat-container">
             <span class="conectatecon">Conectate con</span>
             <div class="cell facebook last-cell" title="Facebook">
                 <em>Facebook</em>
@@ -54,14 +47,13 @@
                 <em>Twitter</em>
             </div>
             <div class="cell chat"  title="Charlar"></div>      
-        </div>
-        
+        </div>--->
         <footer>
             <div class="divpie">
               <p class="texpie">&copy; @DateTime.Now.Year - By  Amelia | Alfredo | Miguel</p>
             </div>                
         </footer>
-        @Scripts.Render("~/bundles/jquery")
+        <!---@Scripts.Render("~/bundles/jquery")--->
         @RenderSection("scripts", required: false)
     </body>
 </html>

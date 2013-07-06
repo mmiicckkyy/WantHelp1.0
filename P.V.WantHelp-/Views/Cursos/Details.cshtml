@@ -3,54 +3,73 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
-
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+    <div class="centrarH">
+<h2 class="letraD">Detalles</h2>
+        <div class="Form">
 <fieldset>
     <legend>Cursos</legend>
-
+     <div class="editor-label" style="display:none;">
+            @Html.LabelFor(model => model.Id_Curso)
+        </div>
+        <div class="editor-field" style="display:none;">
+            @Html.EditorFor(model => model.Id_Curso)
+            @Html.ValidationMessageFor(model => model.Id_Curso)
+        </div>
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Titulo)
+        <b>@Html.DisplayNameFor(model => model.Titulo)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Titulo)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Descripcion)
+         <b>@Html.DisplayNameFor(model => model.Descripcion)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Descripcion)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Fecha_I)
+        <b> @Html.DisplayNameFor(model => model.Fecha_I)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Fecha_I)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Fecha_F)
+        <b> @Html.DisplayNameFor(model => model.Fecha_F)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Fecha_F)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.urlBase)
+        <b> @Html.DisplayNameFor(model => model.urlBase)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.urlBase)
     </div>
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.urlHost)
+        <b> @Html.DisplayNameFor(model => model.urlHost)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.urlHost)
     </div>
 </fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+     </div>
+       <div id="backbutton" class="win-backbutton" style="margin-top: 15px;">
+        <a href="/Cursos" class="tooltip circle border" title="Back to List">
+            <img src="~/Images/img/resultset_previous.png"/>
+        </a>&nbsp;&nbsp;|
+
+        @Html.ActionLink("Edit", "Edit", new { id=Model.Id_Curso})
+        <p style="display:none;">
+            @Html.ActionLink("Edit", "Edit", new { id=Model.Id_Curso}) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</div>
+</div>
+</section>

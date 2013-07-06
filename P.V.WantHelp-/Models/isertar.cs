@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using P.V.WantHelp_.Models;
+
 namespace P.V.WantHelp_.Models
 {
     public class isertar
     {
-
+        
         PlataformaVirtualEntities conex;
         public isertar()
         {

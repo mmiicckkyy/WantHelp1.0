@@ -38,7 +38,6 @@ namespace P.V.WantHelp_.Models
         public DbSet<Respuestas> Respuestas { get; set; }
         public DbSet<Respuestas_Chat> Respuestas_Chat { get; set; }
         public DbSet<sesiones> sesiones { get; set; }
-        public DbSet<sysdiagrams> sysdiagrams { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<webpages_Membership> webpages_Membership { get; set; }
         public DbSet<webpages_OAuthMembership> webpages_OAuthMembership { get; set; }

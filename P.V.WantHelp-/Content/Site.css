@@ -1,11 +1,11 @@
 ﻿html {
-    background-color: #B3B3B3;
+    background-color: #F0F1F1;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #B3B3B3;
+    background-color: #F0F1F1;
     border-top: solid 0px #000;
     color: #333;
     font-size: .85em;
@@ -124,7 +124,7 @@ h5, h6 {    font-size: 1em; }
     max-width: 960px;
 }
 #body {
-    background-color: #B3B3B3;
+    background-color: #F0F1F1;
     clear: both;
     padding-bottom: 35px;
 }
@@ -136,7 +136,7 @@ h5, h6 {    font-size: 1em; }
         /*background: url("../Images/heroAccent.png") no-repeat;*/
     }
 header{
-    background-color:#B3B3B3;
+    background-color:#F8F8F8;
 }
 header .content-wrapper {
     background-color: #414E5E; 
@@ -157,14 +157,29 @@ header .content-wrapper {
 }
 
 footer {  
-    background-color: #414E5E;   
+    /*background-color: #414E5E;   
     height:45px;
     border-radius: 5px 5px 5px 5px;
+    margin:2px 2px 2px 2px;*/
+    clear:both;
+    background-color: #414E5E;   
+    font-size: .8em;
+    height: 61px;
+    border-radius: 5px 5px 5px 5px;
     margin:2px 2px 2px 2px;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF696969', endColorstr='#FF252525');
+    background: #252525;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #696969), color-stop(95%, #363636), color-stop(97%, #313131), color-stop(100%, #252525));
+    background-image: -webkit-linear-gradient(top, #696969 0%,#363636 95%,#313131 97%,#252525 100%);
+    background-image: -moz-linear-gradient(top, #696969 0%,#363636 95%,#313131 97%,#252525 100%);
+    background-image: -o-linear-gradient(top, #696969 0%,#363636 95%,#313131 97%,#252525 100%);
+    background-image: linear-gradient(top, #696969 0%,#363636 95%,#313131 97%,#252525 100%);
 }
 .divpie {
+    padding-top:10px;
     border-radius: 5px 5px 5px 5px;
-    border:1px solid #414E5E;     
+    border:0px solid #414E5E;     
 }
 
 .texpie {
@@ -847,7 +862,17 @@ tr.pager td {
         float: none;
     }
 
-    
+    footer {
+        /*text-align: center;
+        height: auto;
+        padding: 10px 0;*/
+        background-color: #FF8C00;    
+        color: #FFFFFF;
+        height: 50px;
+        margin-top:5px;
+        border-radius:5px 5px 0px 0px;
+        width: 100%;
+    }
 
         footer p {
             margin-top:5px;
@@ -855,6 +880,116 @@ tr.pager td {
         }
 }
 /***AlfredQ ***/
+.tooltip {
+    display: inline;
+    position: relative;
+	
+	position: relative; /* es la posición normal */
+	text-decoration: none !important; /* forzar sin subrayado */
+	color:#0080C0 !important; /* forzar color del texto */
+	font-weight:bold !important; /* forzar negritas */
+  }
+  .tooltip:hover:after {
+    bottom: 26px;
+    content: attr(title); /* este es el texto que será mostrado */
+    left: 20%;
+    position: absolute;
+    z-index: 98;
+    /* el formato gráfico */
+    background: rgba(64,70,77, 0.8); /* el color de fondo */
+    border-radius: 5px;
+    color: #EBEBEB; /* el color del texto */
+    font-family: Georgia;
+    font-size: 12px;
+    padding: 5px 15px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    width: 50px;
+  }
+  .tooltip:hover:before {
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 98;
+    /* el triángulo inferior */
+    border: solid;
+    border-color: rgba(64,70,77, 0.8) transparent;
+    border-width: 6px 6px 0 6px;
+  }
+  .barrita {
+      color:#0080C0 !important;
+  }
+  #body_Curso {
+    margin: 0 auto;
+    width: 97%;
+    background-color: #FFFFFF;
+    border: 1px solid #B8B8B6;
+    border-radius: 5px 5px 5px 5px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left:10px;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  /**inicio letra 3D**/
+.letraD {
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+/**inicio letra 3D**/
+/**inicio css de curos**/
+.centrarH{
+        margin: 0 auto;
+        width: 73%;
+    }
+    .border {
+        border-style: solid;
+        border-width: 2px;
+        -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+                border-radius: 50%;
+        background-clip: border-box;
+    }
+    .inps {
+        background:url(../../Images/img/folder_new.png)no-repeat;
+        margin-left:15px;
+    }
+   .Form{
+       margin: 0 auto;
+       width: 97%;
+       padding-left:15px;
+       padding-right:15px;
+       border-color:rgba(82,168,263,0.8);
+       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,0 0px 8px rgba(82, 168, 236, 0.6) ;
+   }
+/** fin de inicio de curso**/
+/**inicio para me gusta**/
+.share-float {
+    background: #fff;
+    display: normal;
+    /*position: fixed;
+    bottom: 10px;*/
+    right: 5px;
+    border: 0px solid #d2d2d2;
+    padding: 3px 3px 3px 3px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    z-index:333;
+}
+/**fin para me gusta**/
 /*inicion Importante*/
 .importante {
     background-repeat: no-repeat;

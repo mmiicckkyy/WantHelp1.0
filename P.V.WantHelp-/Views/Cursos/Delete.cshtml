@@ -3,56 +3,67 @@
 @{
     ViewBag.Title = "Delete";
 }
-
-<h2>Delete</h2>
-
-<h3>Are you sure you want to delete this?</h3>
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+    <div class="centrarH">
+<h2 class="letraD">Delete</h2>
+<div class="Form">
+<h3>¿Seguro que deseas eliminarlo?</h3>
 <fieldset>
     <legend>Cursos</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Titulo)
+         <b>@Html.DisplayNameFor(model => model.Titulo)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Titulo)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Descripcion)
+         <b>@Html.DisplayNameFor(model => model.Descripcion)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Descripcion)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Fecha_I)
+        <b> @Html.DisplayNameFor(model => model.Fecha_I)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Fecha_I)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Fecha_F)
+        <b> @Html.DisplayNameFor(model => model.Fecha_F)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Fecha_F)
     </div>
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.urlBase)
+        <b> @Html.DisplayNameFor(model => model.urlBase)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.urlBase)
     </div>
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.urlHost)
+        <b> @Html.DisplayNameFor(model => model.urlHost)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.urlHost)
     </div>
 </fieldset>
+    </div>
 @using (Html.BeginForm()) {
-    <p>
+    <div>
         <input type="submit" value="Delete" /> |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+        <div style="display:none;">@Html.ActionLink("Back to List", "Index")</div>
+        <div id="backbutton" class="win-backbutton" style="margin-top: 15px;">
+            <a href="/Cursos" class="tooltip circle border" title="Back to List">
+                <img src="~/Images/img/resultset_previous.png"/>
+            </a>
+        </div>
+    </div>
 }
+</div>
+</div>
+</section>

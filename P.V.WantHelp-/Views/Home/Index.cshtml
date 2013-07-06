@@ -2,6 +2,15 @@
     ViewBag.Title = "P.V.WantHelp";
 }
 <link rel="stylesheet" type="text/css" href="~/Css/ChatGeneral.css">
+<style type="text/css">
+    .RedeSociales{
+        border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    font-weight: bold;
+    }
+</style>
 <script type="text/javascript" src="~/Js/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -25,7 +34,7 @@
                     $("#enlaceOut").hide();
                     $("#enlaceIn").show();
                 });
-
+                
                 /**************Codigo para ocultar el div cuando se haga click en 
                  *              cualquier otro lado del documento****************/
 
@@ -160,6 +169,15 @@
 		<div id="contenedorlogin">
           @Html.Partial("Login2") 
         </div>
+        <div>
+            <div id="share-float" class="share-float">
+            <!-- inicio de me gusta face-->
+            <div id="fb-root"></div>
+            <script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
+            <div class="fb-like" data-href="https://www.facebook.com/Griffith.es" data-standard="false" data-send="false" data-width="280" data-show-faces="true" data-font="segoe ui"></div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/Griffith.es" data-width="292" data-height="92" data-show-faces="false" data-stream="false" data-show-border="false" data-header="false"></div>
+            </div>
+        </div>
         <div class="sectorcursos">
             <div style="width:90%;border:1px solid #000;margin:0 auto; margin-top:5px;"></div>
             <p style="margin:0 auto;text-align:center;font-size:18px;"><b>Cursos</b></p>
@@ -173,6 +191,14 @@
                 <li><a href="#">Base de Datos</a></li>
                 <li><a href="#">Redes</a></li>
             </ul>
-        </div>       
+        </div>
+        <div class="RedeSociales">
+            <!-- Twitter -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://localhost:2606/" data-text="hello, programming MVC 4.0 for the semester project" data-lang="es">Twittear</a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+            <br /><br />
+            <!-- Facebook -->
+            
+        </div>    
     </div>
 </div>

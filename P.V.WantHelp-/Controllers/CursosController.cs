@@ -56,8 +56,32 @@ namespace P.V.WantHelp_.Controllers
             }
 
             return View(cursos);
+        }/*
+        public ActionResult Crear()
+        {
+            return View();
         }
-
+        [HttpPost]
+        public ActionResult Crear(Cursos Cursos, HttpPostedFileBase image)
+        {
+            if (ModelState.IsValid)
+            {
+                if(image=!null)
+                {
+                    
+                }
+                AdminActions contexto= new AdminActions();
+                Cursos curso = new Cursos();
+                var data1 new byte[urlBase.ContentLength];
+                urlBase.InputStream.Read(data1,0,urlBase.ContentLength);
+                var path1=ControllerContext.HttpContext.Server.MapPath("/Content/Libros");
+                var filename1 = Path.Combine(path1, Path.GetFileName(contenido.FileName));
+                System.IO.File.WriteAllBytes(Path.Combine(path1, filename1), data1);
+                curso.urlBase= (urlBase.FileName).ToString();
+                
+                curso.urlBase= 
+            }
+        }*/
         //
         // GET: /Cursos/Edit/5
 
