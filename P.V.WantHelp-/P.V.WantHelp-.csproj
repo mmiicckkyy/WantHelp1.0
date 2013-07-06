@@ -174,6 +174,12 @@
     <Compile Include="Controllers\RolesUserController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\VistasProyectoController.cs" />
+    <Content Include="cssInk\css\docs.css" />
+    <Content Include="cssInk\css\ink-ie7-min.css" />
+    <Content Include="cssInk\css\ink-ie7.css" />
+    <Content Include="cssInk\css\ink-min.css" />
+    <Content Include="cssInk\css\ink.css" />
+    <Content Include="cssInk\css\quick-start.css" />
     <Content Include="Css\ink-min.css" />
     <Content Include="Css\Nuevos.css" />
     <Content Include="Css\ChatGeneral.css" />
@@ -325,6 +331,12 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>conexionModel1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Images\detalle.jpg" />
+    <Content Include="Images\edit.jpg" />
+    <Content Include="Images\eliminar.png" />
+    <Content Include="Images\eliminar1.png" />
+    <Content Include="Images\eliminar2.jpg" />
+    <Content Include="Images\folder_customer_512.ico" />
     <Content Include="Images\img\Add Folder.png" />
     <Content Include="Images\img\add.png" />
     <Content Include="Images\img\calendar.gif" />

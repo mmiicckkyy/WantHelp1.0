@@ -3,23 +3,25 @@
 @{
     ViewBag.Title = "Index";
 }
+<link href="~/cssInk/css/ink.css" type="text/css" rel="stylesheet"/>
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+<h2 class="letraD">Lista De Roles</h2>
+    <p>
+    <!----@Html.ActionLink("Create New", "Create")--->
+    <a href="/Roles/Create" class="tooltip circle" title="Crear nuevo Rol">
+        <img src="~/Images/img/folder_new.png"/>
+    </a>
 </p>
-<table>
+<table class="ink-table hover">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.RoleId)
+            Id Rol
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RoleName)
-        </th>
-        <th></th>
+        
+        <th>Nombre de Rol</th>
     </tr>
-
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -29,11 +31,24 @@
             @Html.DisplayFor(modelItem => item.RoleName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.RoleId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.RoleId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.RoleId })
+            <a href="/Roles/Edit/@item.RoleId" class="tooltip circle" title="Editar">
+                <img src="~/Images/edit.jpg"/>
+            </a><span class="barrita">|</span>
+            <a href="/Roles/Details/@item.RoleId" class="tooltip circle" title="Detalle">
+                <img src="~/Images/detalle.jpg"/>
+            </a><span class="barrita">|</span>
+            <a href="/Roles/Delete/@item.RoleId" class="tooltip circle" title="Eliminar">
+                <img src="~/Images/eliminar2.jpg"/>
+            </a>
+            <div style="display:none;">@Html.ActionLink("Edit", "Edit", new { id=item.RoleId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RoleId}) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RoleId})
+            </div>
         </td>
+        
     </tr>
 }
 
 </table>
+</div>
+</section>

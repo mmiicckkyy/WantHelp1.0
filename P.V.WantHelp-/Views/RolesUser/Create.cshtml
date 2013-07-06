@@ -3,41 +3,59 @@
 @{
     ViewBag.Title = "Create";
 }
-
-<h2>Create</h2>
-
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+    <div id="backbutton" class="win-backbutton">
+        <a href="/RolesUser" class="tooltip circle border" title="Back to List">
+            <img src="~/Images/img/resultset_previous.png"/>
+        </a>
+    </div>
+    <div class="centrarH">
+<h2 class="letraD">Nueva Asignacion</h2>
+<div class="Form">
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
         <legend>webpages_UsersInRoles</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.UserId)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.UserId)
-            @Html.ValidationMessageFor(model => model.UserId)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RoleId, "webpages_Roles")
-        </div>
-        <div class="editor-field">
-            @Html.DropDownList("RoleId", String.Empty)
-            @Html.ValidationMessageFor(model => model.RoleId)
-        </div>
-
+        <table>
+            <tr>
+                <td>
+                    <div class="letraD">
+                       Selecione el Nombre del Usuario
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                       @Html.DropDownList("Id_Usu", String.Empty)
+                        @Html.ValidationMessageFor(model => model.UserId)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="letraD">
+                        Seleccione el Rol que desea Asignar
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        @Html.DropDownList("RoleId", String.Empty)
+                        @Html.ValidationMessageFor(model => model.RoleId)
+                    </div>
+                </td>
+            </tr>
+        </table>
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Asignar" />
         </p>
     </fieldset>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
-
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+        </div>
+</div>
+</section>

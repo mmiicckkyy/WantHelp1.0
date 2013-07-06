@@ -3,10 +3,17 @@
 @{
     ViewBag.Title = "Edit";
 }
-
-<h2>Edit</h2>
-
-@using (Html.BeginForm()) {
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+    <div id="backbutton" class="win-backbutton">
+        <a href="/Roles" class="tooltip circle border" title="Back to List">
+            <img src="~/Images/img/resultset_previous.png"/>
+        </a>
+    </div>
+    <div class="centrarH">
+<h2 class="letraD">Edit</h2>
+        <div class="Form">
+            @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
@@ -20,8 +27,8 @@
             @Html.ValidationMessageFor(model => model.RoleId)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RoleName)
+        <div class="letraD">
+            Nombre de Rol
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.RoleName)
@@ -29,15 +36,15 @@
         </div>
 
         <p>
-            <input type="submit" value="Save" />
+            <input type="submit" value="Guardar" />
         </p>
     </fieldset>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
+            </div>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+        </div>
+</div>
+</section>
+

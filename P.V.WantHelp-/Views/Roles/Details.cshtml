@@ -3,27 +3,45 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
+<section class="content-wrapper main-content clear-fix">
+<div id="body_Curso">
+    <div class="centrarH">
+<h2 class="letraD">Detalles</h2>
+        <div class="Form">
 
 <fieldset>
     <legend>webpages_Roles</legend>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.RoleId)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.RoleId)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.RoleName)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.RoleName)
-    </div>
+    <table class="ink-table hover">
+        <tr>
+            <td class="letraD">
+                     Id de Rol
+                
+            </td>
+            <td>
+                    @Html.DisplayFor(model => model.RoleId)
+            </td>
+        </tr>
+        <tr>
+            <td class="letraD">
+                     Nombre de Rol
+            </td>
+            <td>
+                    @Html.DisplayFor(model => model.RoleName)
+            </td>
+                
+                
+        </tr>
+    </table>
 </fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.RoleId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+</div>
+       <div id="backbutton" class="win-backbutton" style="margin-top: 15px;">
+        <a href="/Roles" class="tooltip circle border" title="Back to List">
+            <img src="~/Images/img/resultset_previous.png"/>
+        </a>&nbsp;&nbsp;
+    </div>
+</div>
+</div>
+
+</section>
+

@@ -41,6 +41,7 @@ namespace P.V.WantHelp_.Controllers
         public ActionResult Create()
         {
             ViewBag.RoleId = new SelectList(db.webpages_Roles, "RoleId", "RoleName");
+            ViewBag.Id_Usu = new SelectList(db.Usuario, "Id_Usu", "Nombre");
             return View();
         }
         public ActionResult Crear()
@@ -55,15 +56,22 @@ namespace P.V.WantHelp_.Controllers
         // POST: /RolesUser/Create
 
         [HttpPost]
-        public ActionResult Create(webpages_UsersInRoles webpages_usersinroles)
+        public ActionResult Create(webpages_UsersInRoles webpages_usersinroles, Usuario userrid)
         {
             if (ModelState.IsValid)
             {
-                db.webpages_UsersInRoles.Add(webpages_usersinroles);
-                db.SaveChanges();
+                webpages_UsersInRoles wpur = new webpages_UsersInRoles();
+                wpur.UserId = userrid.Id_Usu;
+                wpur.RoleId = webpages_usersinroles.RoleId;
+                //db.webpages_UsersInRoles.Add(webpages_usersinroles);
+                db.webpages_UsersInRoles.Add(wpur);
+                //if (wpur.RoleId==webpages_usersinroles.RoleId &&wpur.UserId==webpages_usersinroles.UserId)
+                //return View("existeElRegistro");
+                try { db.SaveChanges(); }
+                catch { return View("existeElRegistro"); }
+
                 return RedirectToAction("Index");
             }
-
             ViewBag.RoleId = new SelectList(db.webpages_Roles, "RoleId", "RoleName", webpages_usersinroles.RoleId);
             return View(webpages_usersinroles);
         }
