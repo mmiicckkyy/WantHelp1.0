@@ -8,13 +8,8 @@
             $(document).ready(function () {
 
                 /*********** Recuperar el ancho y alto dela pantalla (resolucion)***********/
-                //$("#content").css('width',$(window).width());
                 $("#contenedorlogin").css('height', '270px');
-
-                /*****************Un posible opcion para ocultar y mostrar el div*******************/
-                /*$('#enlaceIn').click(function(){
-                    $("#content").slideToggle();
-                });*/
+                
                 /*****************Opcion para ocultar y mostrar el div*******************/
                 $("#enlaceIn").click(function () {
                     $("#contenedorlogin").show();
@@ -27,8 +22,7 @@
                     $("#enlaceIn").show();
                 });
                 
-                /**************Codigo para ocultar el div cuando se haga click en 
-                 *              cualquier otro lado del documento****************/
+                /**************Codigo para ocultar el div cuando se haga click en cualquier otro lado del documento****************/
 
                 $(document.body).click(function (e) {
                     var $box = $('#contenedorlogin');
@@ -167,7 +161,7 @@
         <div>
             <div id="share-float" class="share-float" >
                 <!-- inicio de me gusta face-->
-                <!--<div id="fb-root" style="border:1px solid #cd853f;">jk</div>-->
+                <div id="fb-root" ></div>
                 <script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>
                 <!--<div style="border:0px solid #cd853f;" class="fb-like" data-href="https://www.facebook.com/Griffith.es" data-standard="false" data-send="false" data-width="250" data-show-faces="true" data-font="segoe ui"></div>-->
                 <div style="border:0px solid #cd853f;" class="fb-like-box" data-href="https://www.facebook.com/Griffith.es" data-width="120" data-height="92" data-show-faces="false" data-stream="false" data-show-border="false" data-header="false"></div>
