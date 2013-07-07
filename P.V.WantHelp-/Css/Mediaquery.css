@@ -131,7 +131,10 @@
     .mainlogin {
         width:250px;
         margin-right:10%;
-    }    
+    }
+    .sinsesion {
+    padding-right:50px;
+    }
 }
 
 @media only screen and (max-width: 855px) {
@@ -149,7 +152,9 @@
         width:250px;
         margin-right:7%;
     }
-    
+    .sinsesion {
+        margin-left:30px;
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -238,17 +243,36 @@
         width:250px;
        display:inline-block;
     }
-    /*.importante {
-        width:80%;
-    }*/
-    
+    .ayuda {
+        padding-right:30px;
+    }    
 }
 @media only screen and (max-width: 675px) {
     #body_content {
         margin: 0 auto;
         width: 95%;
-        border: 0px solid #ff0000;
+        border: 1px solid #ff0000;
         height: 1493px;
+    }
+    .ocultarlogin {
+        float:left;
+        margin-top:-1405px;        
+        right:0px;
+        position:fixed;
+    }
+    
+    #contenedorlogin {
+        background:  #1F3E4E;
+        color:#fff;
+    }
+    #enlaceIn {
+        width:50px;
+        right:0px;
+    }
+    #enlaceOut {
+        width:50px;
+        right:0px;
+        margin-right:0;
     }
     .main {
         margin:0 auto;
@@ -257,6 +281,11 @@
         border:0px solid #ff0000;      
     }
    
+}
+@media only screen and (max-width: 674px) {
+    .ayuda {
+        margin-left: 30px;
+    }
 }
 @media only screen and (max-width: 480px) {
     #body_content {       
@@ -274,7 +303,8 @@
     .mainlogin {
         width:250px;
        display:inline-block;
-    }
+    }    
+    
     /*.importante {
         
         width:70%;
