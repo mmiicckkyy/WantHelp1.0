@@ -536,6 +536,7 @@
     <Content Include="Views\Material\Edit.cshtml" />
     <Content Include="Views\Material\Delete.cshtml" />
     <Content Include="Views\Material\SaveFiles.cshtml" />
+    <Content Include="Views\Roles\asignado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

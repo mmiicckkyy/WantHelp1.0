@@ -105,12 +105,19 @@ namespace P.V.WantHelp_.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            webpages_Roles webpages_roles = db.webpages_Roles.Find(id);
-            db.webpages_Roles.Remove(webpages_roles);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                webpages_Roles webpages_roles = db.webpages_Roles.Find(id);
+                db.webpages_Roles.Remove(webpages_roles);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View("asignado");
+                
+            }
         }
-
         protected override void Dispose(bool disposing)
         {
             db.Dispose();
