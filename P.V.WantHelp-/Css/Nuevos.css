@@ -68,9 +68,11 @@ a {
 }
 
 .curso1img {    
-    border:1px solid #000;
+    border:0px solid #000;
     width:135px;
     height:135px;
     float:left;
     margin:6px 15px 5px 7px;
 }
+
+

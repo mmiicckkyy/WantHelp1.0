@@ -98,11 +98,6 @@
         width: 25%;
     }
 
-    /*.importante {
-        margin: 0 auto;
-        width: 85%;
-    }*/
-
     #body_content {
         margin: 0 auto;
         width: 97%;        
@@ -256,11 +251,44 @@
     }
     .ocultarlogin {
         float:left;
-        margin-top:-1405px;        
+        top:0px;        
         right:0px;
-        position:fixed;
+        position:absolute;
+        z-index:3;
     }
-    
+    /*este es el menu de los cursos desplegable*/
+    .contenedormenucel {
+        float:left;
+        top:0px;        
+        left:0px;
+        position:absolute;
+        z-index:3;
+    }
+    .menucursoscel {        
+        width:50px;
+        min-height:35px;
+        max-height:35px;
+        left:0px;
+        top:0px;
+        border-radius:2px;
+        padding-top:3px;
+        background: #1F3E4E;
+        font-size:13px;
+        color: #fff;
+    }
+    .menucursoscel2 {
+        min-height:35px;
+        max-height:35px;
+        width:50px;
+        font-size:13px;
+        left:0px;
+        top:0px;
+        border-radius:2px;
+        background: #1F3E4E;
+        color: #fff;
+        padding-top:3px;
+    }
+    /*fin de este menu*/
     #contenedorlogin {
         background:  #1F3E4E;
         color:#fff;
@@ -268,11 +296,14 @@
     #enlaceIn {
         width:50px;
         right:0px;
+        border-radius:2px;
+        padding-top:4px;
     }
     #enlaceOut {
         width:50px;
         right:0px;
         margin-right:0;
+        border-radius:2px;
     }
     .main {
         margin:0 auto;
