@@ -74,3 +74,8 @@ a {
     float:left;
     margin:6px 15px 5px 7px;
 }
+
+/*boton*/
+p .bot {
+background-color:#ffd800;
+}

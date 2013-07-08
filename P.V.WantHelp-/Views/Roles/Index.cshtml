@@ -7,7 +7,7 @@
 
 <section class="content-wrapper main-content clear-fix">
 <div id="body_Curso">
-<h2 class="letraD">Lista De Roles</h2>
+<h2 class="letraD" style="font-size:35px;">Lista De Roles</h2>
     <p>
     <!----@Html.ActionLink("Create New", "Create")--->
     <a href="/Roles/Create" class="tooltip circle" title="Crear nuevo Rol">
@@ -16,18 +16,18 @@
 </p>
 <table class="ink-table hover">
     <tr>
-        <th>
+        <th style="visibility:hidden;">
             Id Rol
         </th>
         
-        <th>Nombre de Rol</th>
+        <th class="letraD" style="font-size:25px;">Nombre de Rol</th>
     </tr>
 @foreach (var item in Model) {
     <tr>
-        <td>            
+        <td style="visibility:hidden;">            
             @Html.DisplayFor(modelItem => item.RoleId)
         </td>
-        <td>
+        <td style="font-size:16px;">
             @Html.DisplayFor(modelItem => item.RoleName)
         </td>
         <td>
