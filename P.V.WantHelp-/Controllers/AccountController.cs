@@ -86,7 +86,7 @@ namespace P.V.WantHelp_.Controllers
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
                     Usuario usuario = new Usuario();
                     UserProfile userserver = new UserProfile();
-                    int o = conex2.webpages_Membership.Count()+1;
+                    int o = conex2.webpages_Membership.Count();
                     Usuario u = new Usuario();
                     u.Nombre = model.Nombres;
                     u.Apellido_P = model.ApellidoP;
