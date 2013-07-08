@@ -1,7 +1,7 @@
-#contenedorlogin{ 
-	
+#contenedorlogin{ 	
 	margin:0 auto;
     background: transparent;
+    position:initial;
     width: 250px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -73,3 +73,4 @@
     background: #1F3E4E;
     color: #bed7fc;
 }
+/*hgjhgkjjjjjjjj*/

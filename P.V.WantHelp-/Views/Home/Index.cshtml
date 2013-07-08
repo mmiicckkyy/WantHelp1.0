@@ -2,6 +2,7 @@
     ViewBag.Title = "P.V.WantHelp";
 }
 <link rel="stylesheet" type="text/css" href="~/Css/ChatGeneral.css">
+<link rel="stylesheet" type="text/css" href="~/Css/estilosGeneral.css" />
 
 <script type="text/javascript" src="~/Js/jquery.min.js"></script>
         <script>
@@ -9,7 +10,7 @@
 
                 /*********** Recuperar el ancho y alto dela pantalla (resolucion)***********/
                 $("#contenedorlogin").css('height', '270px');
-                
+
                 /*****************Opcion para ocultar y mostrar el div*******************/
                 $("#enlaceIn").click(function () {
                     $("#contenedorlogin").show();
@@ -21,7 +22,7 @@
                     $("#enlaceOut").hide();
                     $("#enlaceIn").show();
                 });
-                
+
                 /**************Codigo para ocultar el div cuando se haga click en cualquier otro lado del documento****************/
 
                 $(document.body).click(function (e) {
@@ -34,6 +35,37 @@
                 });
             });
         </script>
+<!--otroo menu -->
+<script>
+    $(document).ready(function () {
+
+        /*********** Recuperar el ancho y alto dela pantalla (resolucion)***********/
+        $(".divcursoscel").css('height',$(window).height());
+
+        /*****************Opcion para ocultar y mostrar el div*******************/
+        $(".menucursoscel").click(function () {
+            $(".divcursoscel").show();
+            $(".menucursoscel").hide();
+            $(".menucursoscel2").show();
+        });
+        $(".menucursoscel2").click(function () {
+            $(".divcursoscel").hide();
+            $(".menucursoscel2").hide();
+            $(".menucursoscel").show();
+        });
+
+        /**************Codigo para ocultar el div cuando se haga click en cualquier otro lado del documento****************/
+
+        $(document.body).click(function (e) {
+            var $box = $('.divcursoscel');
+            if (e.target.id !== 'divcursoscel' && e.target.id !== 'menucursoscel' && e.target.id !== 'menucursoscel2' && !$.contains($box[0], e.target)) {
+                $(".divcursoscel").hide();
+                $(".menucursoscel2").hide();
+                $(".menucursoscel").show();
+            }
+        });
+    });
+ </script>
 
 <!-- Start WOWSlider.com HEAD section -->
 <link rel="stylesheet" type="text/css" href="~/Js/engine1/style.css" />
@@ -45,7 +77,7 @@
         <div class="content-wrapper">
             <!-- Start WOWSlider.com BODY section -->
 	        <div id="wowslider-container1">
-	            <div class="ws_images"><ul>
+	            <div class="ws_images" ><ul >
                     <li><img src="~/Image/data1/images/about_us_slide_2.jpg" alt="about_us_slide_1" title="about_us_slide_1" id="wows1_0"/>Trabajo en grupo</li>
                     <li><img src="~/Image/data1/images/fproktabstop2.jpg" alt="about_us_slide_2" title="about_us_slide_2" id="wows1_1"/>Realizacion del trabajo</li>
                     <li><img src="~/Image/data1/images/about_us_slide_1.jpg" alt="about_us_slide_3" title="about_us_slide_3" id="wows1_2"/>Trabajando en equipo</li>
@@ -76,7 +108,12 @@
         </div>
     </section>  
 }
-
+<div class="contenedormenucel">
+    <div class="menudesplegable"></div>
+    <div class="menucursoscel">Cursos</div>    
+    <div class="menucursoscel2">Cursos1</div>
+    
+</div>
 <div id="body_content">
     <!---inicion Importante--->
     <div class="importante">
@@ -150,6 +187,7 @@
              </div> 
         </div>        
     </div>
+    
     <div class="mainlogin">
         <div class="ocultarlogin">
             <div id="enlaceIn" >Login</div>
