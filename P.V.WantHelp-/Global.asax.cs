@@ -23,6 +23,7 @@ namespace P.V.WantHelp_
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
         }
     }
 }
