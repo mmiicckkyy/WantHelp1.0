@@ -174,6 +174,8 @@
     <Compile Include="Controllers\RolesUserController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\VistasProyectoController.cs" />
+    <Compile Include="Models\PermisosDeMenu.cs" />
+    <Compile Include="Utils\Permisos.cs" />
     <Content Include="cssInk\css\docs.css" />
     <Content Include="cssInk\css\ink-ie7-min.css" />
     <Content Include="cssInk\css\ink-ie7.css" />
@@ -348,6 +350,14 @@
     <Content Include="Images\img\resultset_last.png" />
     <Content Include="Images\img\resultset_next.png" />
     <Content Include="Images\img\resultset_previous.png" />
+    <Content Include="Js\css\basic.css" />
+    <Content Include="Js\css\dropzone.css" />
+    <Content Include="Js\dropzone-amd-module.js" />
+    <Content Include="Js\dropzone-amd-module.min.js" />
+    <Content Include="Js\dropzone.js" />
+    <Content Include="Js\dropzone.min.js" />
+    <Content Include="Js\images\spritemap%402x.png" />
+    <Content Include="Js\images\spritemap.png" />
     <Content Include="Js\jquery.ui.datepicker-es.js" />
     <Content Include="Models\conexionModel1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -362,6 +372,8 @@
       <DependentUpon>conexionModel1.edmx</DependentUpon>
       <LastGenOutput>conexionModel1.cs</LastGenOutput>
     </Content>
+    <Content Include="Js\css\stylus\basic.styl" />
+    <Content Include="Js\css\stylus\dropzone.styl" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="imagenesChat\5840.gif" />
     <Content Include="imagenesChat\5841.gif" />
@@ -523,9 +535,11 @@
     <Content Include="Views\Material\Create.cshtml" />
     <Content Include="Views\Material\Edit.cshtml" />
     <Content Include="Views\Material\Delete.cshtml" />
+    <Content Include="Views\Material\SaveFiles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Archivos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

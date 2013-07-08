@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using P.V.WantHelp_.Models;
+using WebMatrix.WebData;
 
 namespace P.V.WantHelp_.Controllers
 {
@@ -62,6 +63,46 @@ namespace P.V.WantHelp_.Controllers
             ViewBag.Id_Usu = new SelectList(db.Usuario, "Id_Usu", "Nombre", material.Id_Usu);
             return View(material);
         }
+        public void guardar(ResultUpload datos)
+        {
+            AdminActions contexto = new AdminActions();
+            Usuario user = contexto.getUsuario(WebSecurity.CurrentUserId);
+            //Usuario user = contexto.getUsuario(Session["idUs"]);
+            contexto.GuardarArchivo(datos, user.Id_Usu);
+        }
+        [HttpPost]
+        public JsonResult SaveFiles()
+        {
+            HttpFileCollectionBase files = Request.Files;
+            string path = Server.MapPath("~/Archivos/");
+            string nombres_de_archivos = "";
+            string respuesta = "";
+            for (int i = 0; i < files.Count; i++)
+            {
+                if (files[i].ContentLength > 0)
+                {
+                    string[] archivoenpartes = files[i].FileName.Split('.');
+                    if (archivoenpartes.Length == 0)
+                    {
+                        respuesta = "false";
+                        return Json(data: respuesta);
+                    }
+                    nombres_de_archivos += files[i].FileName + "|";
+                    string extension = archivoenpartes[1];
+                    string nombredearchivo = archivoenpartes[0];
+                    string name = DateTime.Now.GetHashCode().ToString();
+                    files[i].SaveAs(path + name + "." + extension);
+                    respuesta += "/Archivos/" + name + "." + extension;
+                }
+                else
+                {
+                    respuesta = "false";
+                }
+            }
+
+            return Json(data: new ResultUpload() { filename = nombres_de_archivos, fileroute = respuesta });
+        }
+
 
         //
         // GET: /Material/Edit/5

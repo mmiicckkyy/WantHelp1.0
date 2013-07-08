@@ -37,6 +37,8 @@ namespace P.V.WantHelp_.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
             {
+                AdminActions contexto = new AdminActions();
+                Session["idUs"] = contexto.getUserId(model.UserName);
                 return RedirectToLocal(returnUrl);
             }
 

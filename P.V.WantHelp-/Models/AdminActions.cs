@@ -56,21 +56,22 @@ namespace P.V.WantHelp_.Models
                 return false;
             }
         }
-       /* public bool GuardarArchivo(ResultUpload archivo, int idUs)
+        public bool GuardarArchivo(ResultUpload archivo, int idUs)
         {
-            files fs= new files(){
-                idUs =idUs,
-                urlAbs=archivo.fileroute,
-                urlWeb="http://localhost:2606/"+archivo.fileroute
+            Material mtrl = new Material()
+            {
+                Id_Usu =idUs,
+                urlBase=archivo.fileroute,
+                urlHost="http://localhost:2606/"+archivo.fileroute
             };
-            server.files.add(fs);
+            server.Material.Add(mtrl);
             server.SaveChanges();
             return true;
         }
-        internal List<files> getFiles(int p)
+        internal List<Material> getFiles(int p)
         {
-            return server.files.Where(a => a.idUs == p).ToList();
-        }*/
+            return server.Material.Where(a => a.Id_Usu == p).ToList();
+        }
         /** Get Id **/
         public Usuario getUsuario(int id)
         {
@@ -84,6 +85,54 @@ namespace P.V.WantHelp_.Models
         internal bool insertarRol(webpages_Roles roles)
         {
             throw new NotImplementedException();
+        }
+
+        internal object getUserId(string p)
+        {
+            return userserver.UserProfiles.Where(a => a.UserName == p).FirstOrDefault().UserId;
+        }
+        public List<PermisosDeMenu> getPermisos(int idUs)
+        {
+            Dictionary<string, string> direcciones = new Dictionary<string, string>();
+            direcciones.Add("About", "/Home/About");
+            direcciones.Add("Contact", "/Home/Contact");
+            direcciones.Add("Home", "/");
+
+            direcciones.Add("Cursos", "/");
+            direcciones.Add("Cursos_Create", "/Cursos/Create");
+            direcciones.Add("Cursos_Edit", "/Cursos/Edit");
+            direcciones.Add("Cursos_Details", "/Cursos/Details");
+            direcciones.Add("Cursos_Delete", "/Cursos/Delete");
+
+            direcciones.Add("Material", "/");
+            direcciones.Add("Material_Create", "/Material/Create");
+            direcciones.Add("Material_Edit", "/Material/Edit");
+            direcciones.Add("Material_Details", "/Material/Details");
+            direcciones.Add("Material_Delete", "/Material/Delete");
+
+            direcciones.Add("Roles", "/");
+            direcciones.Add("Roles_Create", "/Roles/Create");
+            direcciones.Add("Roles_Edit", "/Roles/Edit");
+            direcciones.Add("Roles_Details", "/Roles/Details");
+            direcciones.Add("Roles_Delete", "/Roles/Delete");
+
+            direcciones.Add("RolesUser", "/");
+            direcciones.Add("RolesUser_Create", "/RolesUser/Create");
+
+            //string s = direcciones["About"];
+            List<PermisosDeMenu> resultado = server.webpages_UsersInRoles.
+                Where(a => a.UserId == idUs)
+                .Select(
+                b => new PermisosDeMenu()
+                {
+                    idRol = b.RoleId,
+                    label = b.webpages_Roles.RoleName
+                }).ToList();
+            foreach (var item in resultado)
+            {
+                item.urls = direcciones[item.label];
+            }
+            return resultado;
         }
     }
 }
