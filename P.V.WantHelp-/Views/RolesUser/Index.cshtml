@@ -37,12 +37,12 @@
             <a href="/RolesUser/Details/@item.RoleId" class="tooltip circle" title="Detalle">
                 <img src="~/Images/detalle.jpg"/>
             </a><span class="barrita">|</span>
-            <a href="/RolesUser/Delete/@item.RoleId" class="tooltip circle" title="Eliminar">
+            <a href="/RolesUser/DeleteConfirmed/@item.UserId @item.RoleId" class="tooltip circle" title="Eliminar">
                 <img src="~/Images/eliminar2.jpg"/>
             </a>
             <div style="display:none;">@Html.ActionLink("Edit", "Edit", new { id=item.RoleId}) |
             @Html.ActionLink("Details", "Details", new { id=item.RoleId}) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.RoleId,idu=item.UserId})
+            <a href=""> </a>
             </div>
         </td>
     </tr>

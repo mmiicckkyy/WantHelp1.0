@@ -61,6 +61,8 @@ namespace P.V.WantHelp_.Models
             Material mtrl = new Material()
             {
                 Id_Usu =idUs,
+                Id_Curso=1,
+                archivos = archivo.fileroute,
                 urlBase=archivo.fileroute,
                 urlHost="http://localhost:2606/"+archivo.fileroute
             };
@@ -75,7 +77,7 @@ namespace P.V.WantHelp_.Models
         /** Get Id **/
         public Usuario getUsuario(int id)
         {
-            return server.Usuario.Where(a => a.Id_Usu == id).FirstOrDefault();
+            return server.Usuario.Where(a => a.UserId == id).FirstOrDefault();
         }
         public UserProfile getUserPr(int id)
         {

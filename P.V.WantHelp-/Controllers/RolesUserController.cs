@@ -122,11 +122,13 @@ namespace P.V.WantHelp_.Controllers
         //
         // POST: /RolesUser/Delete/5
 
-        [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
+        /*[HttpPost, ActionName("Delete")]*/
+        public ActionResult DeleteConfirmed(string id)
         {
-            
-                webpages_UsersInRoles webpages_usersinroles = db.webpages_UsersInRoles.Find(id);
+            int idUs = Convert.ToInt32(id.Split(' ')[0]);
+            int idRol = Convert.ToInt32(id.Split(' ')[1]);
+
+            webpages_UsersInRoles webpages_usersinroles = db.webpages_UsersInRoles.Where(a => a.RoleId == idRol && a.UserId == idUs).FirstOrDefault();
                 db.webpages_UsersInRoles.Remove(webpages_usersinroles);
                 db.SaveChanges();
                 return RedirectToAction("Index");
