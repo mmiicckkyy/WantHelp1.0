@@ -105,6 +105,13 @@ namespace P.V.WantHelp_.Controllers
             ViewBag.RoleId = new SelectList(db.webpages_Roles, "RoleId", "RoleName", webpages_usersinroles.RoleId);
             return View(webpages_usersinroles);
         }
+        public ActionResult EditConfirmed()
+        {
+            
+            return RedirectToAction("Create");
+
+
+        }
 
         //
         // GET: /RolesUser/Delete/5

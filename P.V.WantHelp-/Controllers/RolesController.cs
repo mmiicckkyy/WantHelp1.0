@@ -20,7 +20,7 @@ namespace P.V.WantHelp_.Controllers
         {
             return View(db.webpages_Roles.ToList());
         }
-
+        
         //
         // GET: /Roles/Details/5
 
@@ -48,16 +48,27 @@ namespace P.V.WantHelp_.Controllers
         [HttpPost]
         public ActionResult Create(webpages_Roles webpages_roles)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.webpages_Roles.Add(webpages_roles);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.webpages_Roles.Add(webpages_roles);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+
+                return View(webpages_roles);
+
             }
-
-            return View(webpages_roles);
+            catch{
+                
+               return View("rolexistente");
+            }
+            
+            
         }
-
+        
+        
         //
         // GET: /Roles/Edit/5
 
