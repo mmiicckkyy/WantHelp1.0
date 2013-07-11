@@ -92,7 +92,7 @@ namespace P.V.WantHelp_.Controllers
                     string nombredearchivo = archivoenpartes[0];
                     string name = DateTime.Now.GetHashCode().ToString();
                     files[i].SaveAs(path + name + "." + extension);
-                    respuesta += "/Archivos/" + name + "." + extension;
+                    respuesta += "Archivos/" + name + "." + extension;
                 }
                 else
                 {

@@ -339,11 +339,15 @@
     <Content Include="Images\folder_customer_512.ico" />
     <Content Include="Images\img\Add Folder.png" />
     <Content Include="Images\img\add.png" />
+    <Content Include="Images\img\alerta.png" />
     <Content Include="Images\img\calendar.gif" />
     <Content Include="Images\img\database_edit.png" />
     <Content Include="Images\img\defaut_small.gif" />
     <Content Include="Images\img\delete.png" />
+    <Content Include="Images\img\error.png" />
+    <Content Include="Images\img\exito.png" />
     <Content Include="Images\img\folder_new.png" />
+    <Content Include="Images\img\info.png" />
     <Content Include="Images\img\resultset_first.png" />
     <Content Include="Images\img\resultset_last.png" />
     <Content Include="Images\img\resultset_next.png" />
