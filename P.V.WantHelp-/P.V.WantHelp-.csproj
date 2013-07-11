@@ -166,6 +166,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CursosController.cs" />
+    <Compile Include="Controllers\EstudianteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\isertarController.cs" />
     <Compile Include="Controllers\MaterialController.cs" />
@@ -201,6 +202,7 @@
     <Compile Include="Models\Cursos.cs">
       <DependentUpon>conexionModel1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Estudiante.cs" />
     <Compile Include="Models\inscripcion.cs">
       <DependentUpon>conexionModel1.tt</DependentUpon>
     </Compile>
@@ -538,6 +540,7 @@
     <Content Include="Views\Material\SaveFiles.cshtml" />
     <Content Include="Views\Roles\asignado.cshtml" />
     <Content Include="Views\Roles\rolexistente.cshtml" />
+    <Content Include="Views\Estudiante\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
