@@ -21,6 +21,7 @@ namespace P.V.WantHelp_.Models
     
         public int RoleId { get; set; }
         public string RoleName { get; set; }
+        public string UrlHost { get; set; }
     
         public virtual ICollection<webpages_UsersInRoles> webpages_UsersInRoles { get; set; }
     }

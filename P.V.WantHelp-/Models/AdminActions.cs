@@ -89,52 +89,29 @@ namespace P.V.WantHelp_.Models
             throw new NotImplementedException();
         }
 
+        public List<PermisosDeMenu> getpermisos(int idus)
+        {
+            List<PermisosDeMenu> resultado = server.webpages_UsersInRoles.
+                Where(a => a.UserId == idus)
+                .Select(b => new PermisosDeMenu()
+                {
+                    idRol = b.RoleId,
+                    label = b.webpages_Roles.RoleName,
+                    urls = b.webpages_Roles.UrlHost
+                }).ToList();
+            webpages_Roles p = new webpages_Roles();
+            /*foreach (var item in resultado){
+                item.url=p.urldireccion;
+            }*/
+            return resultado;
+        }
         internal object getUserId(string p)
         {
             return userserver.UserProfiles.Where(a => a.UserName == p).FirstOrDefault().UserId;
         }
-        public List<PermisosDeMenu> getPermisos(int idUs)
+        public List<UserProfile> getUseRoles()
         {
-            Dictionary<string, string> direcciones = new Dictionary<string, string>();
-            direcciones.Add("About", "/Home/About");
-            direcciones.Add("Contact", "/Home/Contact");
-            direcciones.Add("Home", "/");
-
-            direcciones.Add("Cursos", "/");
-            direcciones.Add("Cursos_Create", "/Cursos/Create");
-            direcciones.Add("Cursos_Edit", "/Cursos/Edit");
-            direcciones.Add("Cursos_Details", "/Cursos/Details");
-            direcciones.Add("Cursos_Delete", "/Cursos/Delete");
-
-            direcciones.Add("Material", "/");
-            direcciones.Add("Material_Create", "/Material/Create");
-            direcciones.Add("Material_Edit", "/Material/Edit");
-            direcciones.Add("Material_Details", "/Material/Details");
-            direcciones.Add("Material_Delete", "/Material/Delete");
-
-            direcciones.Add("Roles", "/");
-            direcciones.Add("Roles_Create", "/Roles/Create");
-            direcciones.Add("Roles_Edit", "/Roles/Edit");
-            direcciones.Add("Roles_Details", "/Roles/Details");
-            direcciones.Add("Roles_Delete", "/Roles/Delete");
-
-            direcciones.Add("RolesUser", "/");
-            direcciones.Add("RolesUser_Create", "/RolesUser/Create");
-
-            //string s = direcciones["About"];
-            List<PermisosDeMenu> resultado = server.webpages_UsersInRoles.
-                Where(a => a.UserId == idUs)
-                .Select(
-                b => new PermisosDeMenu()
-                {
-                    idRol = b.RoleId,
-                    label = b.webpages_Roles.RoleName
-                }).ToList();
-            foreach (var item in resultado)
-            {
-                item.urls = direcciones[item.label];
-            }
-            return resultado;
+            return userserver.UserProfiles.ToList();
         }
     }
 }

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using P.V.WantHelp_.Models;
+using P.V.WantHelp_.Utils;
+using WebMatrix.WebData;
 
 namespace P.V.WantHelp_.Controllers
 {
@@ -18,6 +20,11 @@ namespace P.V.WantHelp_.Controllers
 
         public ActionResult Index()
         {
+            if (Request.IsAuthenticated)
+            {
+                Permisos check = new Permisos(Convert.ToInt32(Session["idus"]));
+                ViewBag.Menus = check.getPermisos();
+            };
             return View(db.webpages_Roles.ToList());
         }
         
@@ -52,6 +59,7 @@ namespace P.V.WantHelp_.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    webpages_roles.UrlHost = "http://localhost:2606/" + webpages_roles.RoleName;
                     db.webpages_Roles.Add(webpages_roles);
                     db.SaveChanges();
                     return RedirectToAction("Index");

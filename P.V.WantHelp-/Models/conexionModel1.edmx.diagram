@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="aaa411453866407bb401e49168f37626" Name="Diagram1">
+      <Diagram DiagramId="a15bb2988ad34acdae15265d9e6fd992" Name="Diagram1">
         <EntityTypeShape EntityType="PlataformaVirtualModel.archivos" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.avatar" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.Comentarios" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
@@ -22,7 +22,7 @@
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_Membership" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_OAuthMembership" Width="1.5" PointX="3.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_Roles" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_UsersInRoles" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_UsersInRoles" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="PlataformaVirtualModel.FK__archivos__idSe__5165187F" ManuallyRouted="false" />
         <AssociationConnector Association="PlataformaVirtualModel.FK__archivos__idUs__5070F446" ManuallyRouted="false" />
         <AssociationConnector Association="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" ManuallyRouted="false" />

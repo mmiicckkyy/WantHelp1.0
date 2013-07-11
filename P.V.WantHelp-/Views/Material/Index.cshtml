@@ -14,7 +14,7 @@
 </p>
 <table>
     <tr>
-        <th>
+        <th style="display:none;">
             @Html.DisplayNameFor(model => model.Id_Material)
         </th>
         <th>
@@ -29,7 +29,7 @@
         <th>
             @Html.DisplayNameFor(model => model.urlBase)
         </th>
-        <th>
+        <th style="display:none;">
             @Html.DisplayNameFor(model => model.urlHost)
         </th>
         <th></th>
@@ -37,7 +37,7 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td style="display:none;">
             @Html.DisplayFor(modelItem => item.Id_Material)
         </td>
         <td>
@@ -52,7 +52,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.urlBase)
         </td>
-        <td>
+        <td style="display:none;">
             @Html.DisplayFor(modelItem => item.urlHost)
         </td>
         <td>

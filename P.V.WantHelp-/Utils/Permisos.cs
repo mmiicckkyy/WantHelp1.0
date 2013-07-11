@@ -15,10 +15,9 @@ namespace P.V.WantHelp_.Utils
 
             AdminActions contexto = new AdminActions();
             permisos = new List<PermisosDeMenu>();
-            permisos = contexto.getPermisos(Convert.ToInt32(idUs));
+            permisos = contexto.getpermisos(Convert.ToInt32(idUs));
         }
-
-        public List<PermisosDeMenu> getPernmisos()
+        public List<PermisosDeMenu> getPermisos()
         {
             return permisos;
         }

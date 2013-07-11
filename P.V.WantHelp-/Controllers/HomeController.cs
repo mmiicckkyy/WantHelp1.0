@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using P.V.WantHelp_.Models;
+using P.V.WantHelp_.Utils;
+using WebMatrix.WebData;
 
 namespace P.V.WantHelp_.Controllers
 {
@@ -10,6 +13,11 @@ namespace P.V.WantHelp_.Controllers
     {
         public ActionResult Index()
         {
+            if (Request.IsAuthenticated)
+            {
+                Permisos check = new Permisos(Convert.ToInt32(Session["idus"]));
+                ViewBag.Menus = check.getPermisos();
+            };
             ViewBag.Message = "Cursos con Certificado de Profesionalidad";
 
             return View();
@@ -35,6 +43,11 @@ namespace P.V.WantHelp_.Controllers
 		}
         public ActionResult About()
         {
+            if (Request.IsAuthenticated)
+            {
+                Permisos check = new Permisos(Convert.ToInt32(Session["idus"]));
+                ViewBag.Menus = check.getPermisos();
+            };
             ViewBag.Message = "Your app description page.";
 
             return View();
@@ -42,6 +55,11 @@ namespace P.V.WantHelp_.Controllers
 
         public ActionResult Contact()
         {
+            if (Request.IsAuthenticated)
+            {
+                Permisos check = new Permisos(Convert.ToInt32(Session["idus"]));
+                ViewBag.Menus = check.getPermisos();
+            };
             ViewBag.Message = "Your contact page.";
 
             return View();

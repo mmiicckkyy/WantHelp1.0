@@ -292,6 +292,7 @@
           </Key>
           <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="UrlHost" Type="varchar" MaxLength="120" />
         </EntityType>
         <EntityType Name="webpages_UsersInRoles">
           <Key>
@@ -913,6 +914,7 @@
           </Key>
           <Property Name="RoleId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
           <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="UrlHost" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="webpages_UsersInRoles" Relationship="PlataformaVirtualModel.fk_RoleId" FromRole="webpages_Roles" ToRole="webpages_UsersInRoles" />
         </EntityType>
         <EntityType Name="webpages_UsersInRoles">
@@ -1395,6 +1397,7 @@
               <MappingFragment StoreEntitySet="webpages_Roles">
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="UrlHost" ColumnName="UrlHost" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
