@@ -169,6 +169,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\isertarController.cs" />
     <Compile Include="Controllers\MaterialController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\RegistrosController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\RolesUserController.cs" />
@@ -251,6 +252,7 @@
     <Content Include="cssInk\css\ink-min.css" />
     <Content Include="cssInk\css\ink.css" />
     <Content Include="cssInk\css\quick-start.css" />
+    <Content Include="Css\csspopup.css" />
     <Content Include="Css\ink-min.css" />
     <Content Include="Css\Nuevos.css" />
     <Content Include="Css\ChatGeneral.css" />
@@ -329,6 +331,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\18705272-humanos-iconos-de-gestion-de-recursos.png" />
     <Content Include="Images\detalle.jpg" />
     <Content Include="Images\edit.jpg" />
     <Content Include="Images\eliminar.png" />
@@ -346,6 +349,7 @@
     <Content Include="Images\img\resultset_last.png" />
     <Content Include="Images\img\resultset_next.png" />
     <Content Include="Images\img\resultset_previous.png" />
+    <Content Include="Images\vimeo.png" />
     <Content Include="Js\css\basic.css" />
     <Content Include="Js\css\dropzone.css" />
     <Content Include="Js\dropzone-amd-module.js" />
@@ -538,6 +542,8 @@
     <Content Include="Views\Material\SaveFiles.cshtml" />
     <Content Include="Views\Roles\asignado.cshtml" />
     <Content Include="Views\Roles\rolexistente.cshtml" />
+    <Content Include="Views\Perfil\Details.cshtml" />
+    <Content Include="Views\Perfil\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

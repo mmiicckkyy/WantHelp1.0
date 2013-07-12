@@ -206,17 +206,12 @@ footer {
 #login {
     display: block;
     font-size: .85em;
-    margin: 0 0 10px;
     text-align: left;
+    width:140px;
+    margin:0 auto;
 }
 
-    #login a {
-        border-radius: 3px 3px 3px 3px;
-        margin-left: 10px;
-        margin-right: 3px;
-        padding: 5px 5px;
-        text-decoration: none;
-    }
+   
     #login a {
         font-weight: bold;
         color:#037FB2;
@@ -713,13 +708,10 @@ tr.pager td {
 
     /* login */
     #login {
-        font-size: .85em;
-        margin: 0 0 12px;
         text-align: center;
     }
 
         #login ul {
-            margin: 5px 0;
             padding: 0;
         }
 
@@ -734,7 +726,6 @@ tr.pager td {
             background: none;
             color: #999;
             font-weight: 600;
-            margin: 2px;
             padding: 0;
         }
 
@@ -987,10 +978,10 @@ tr.pager td {
 /*inicio popup*/
 .linklogin {
     border:0px solid #000;
-    width:30%;
-    padding:10px 0px 0px 15px;
-    margin:0 auto;   
+    margin:0 auto;
+      
 }
+
 .sinsesion {
     text-decoration:none;
     color:#037FB2;
