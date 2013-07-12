@@ -3,17 +3,22 @@
 @{
     ViewBag.Title = "Index";
 }
+<<<<<<< HEAD
 
+=======
+<link href="~/cssInk/css/ink.css" type="text/css" rel="stylesheet"/>
+>>>>>>> c6dca76f763741aef16fb013c22194135bbc3844
 <section class="content-wrapper main-content clear-fix">
 <div id="body_Curso">
     <div class="centrarH">
 <h2 class="letraD">Material...</h2>
+
 <p><!---@Html.ActionLink("Create New", "Create")--->
-    <a href="/Material/Create" class="tooltip circle" title="Crear nuevo Curso">
+    <a href="/Material/Create" class="tooltip circle" title="Crear nuevo material">
     <img src="~/Images/img/folder_new.png"/>
     </a>
 </p>
-<table>
+<table class="ink-table hover">
     <tr>
         <th style="display:none;">
             @Html.DisplayNameFor(model => model.Id_Material)
@@ -56,10 +61,29 @@
         <td style="display:none;">
             @Html.DisplayFor(modelItem => item.urlHost)
         </td>
+<<<<<<< HEAD
         <td>           
             @Html.ActionLink("Edit", "Edit", new {id=item.Id_Material}) |
             @Html.ActionLink("Details", "Details", new { id=item.Id_Material}) |
             @Html.ActionLink("Delete", "Delete", new {id=item.Id_Material})
+=======
+        
+        <td>
+            <a href="/Cursos/Edit/@item.Id_Material" class="tooltip circle" title="Editar">
+                <img src="~/Images/edit.jpg"/>
+            </a><span class="barrita">|</span>
+            <a href="/Cursos/Details/@item.Id_Material" class="tooltip circle" title="Detalle">
+                <img src="~/Images/detalle.jpg"/>
+            </a><span class="barrita">|</span>
+            <a href="/Cursos/Delete/@item.Id_Material" class="tooltip circle" title="Eliminar">
+                <img src="~/Images/eliminar2.jpg"/>
+            </a>
+            <div style="display:none;">
+                @Html.ActionLink("Edit", "Edit", new {id=item.Id_Material}) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id_Material}) |
+                @Html.ActionLink("Delete", "Delete", new {id=item.Id_Material})
+            </div>
+>>>>>>> c6dca76f763741aef16fb013c22194135bbc3844
         </td>
     </tr>
 }

@@ -4,12 +4,13 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+
+<h2 class="letraD">Nuevo Material</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
-    <fieldset>
+    <fieldset >
         <legend>Material</legend>
 
         <div class="editor-label" style="visibility:hidden;">
@@ -62,9 +63,12 @@
     </fieldset>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+
+<div id="backbutton" class="win-backbutton">
+        <a href="/Material" class="tooltip circle border" title="Atras">
+            <img src="~/Images/img/resultset_previous.png"/>
+        </a>
+    </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
