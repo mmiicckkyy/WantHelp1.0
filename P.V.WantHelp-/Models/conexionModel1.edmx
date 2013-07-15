@@ -255,11 +255,12 @@
           </Key>
           <Property Name="Id_Usu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
-          <Property Name="Apellido_P" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Apellido_M" Type="varchar" MaxLength="50" />
           <Property Name="email" Type="varchar" MaxLength="20" />
           <Property Name="sexo" Type="varchar" MaxLength="20" />
           <Property Name="UserId" Type="int" />
+          <Property Name="Apellido_P" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="varchar" MaxLength="15" />
         </EntityType>
         <EntityType Name="webpages_Membership">
           <Key>
@@ -866,11 +867,12 @@
           </Key>
           <Property Name="Id_Usu" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="Apellido_P" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="Apellido_M" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
           <Property Name="sexo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
           <Property Name="UserId" Type="Int32" />
+          <Property Name="Apellido_P" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Estado" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idUs__5070F446" FromRole="Usuario" ToRole="archivos" />
           <NavigationProperty Name="avatar" Relationship="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" FromRole="Usuario" ToRole="avatar" />
           <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565" FromRole="Usuario" ToRole="Comentarios" />
@@ -1358,11 +1360,12 @@
               <MappingFragment StoreEntitySet="Usuario">
                 <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-                <ScalarProperty Name="Apellido_P" ColumnName="Apellido_P" />
                 <ScalarProperty Name="Apellido_M" ColumnName="Apellido_M" />
                 <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="sexo" ColumnName="sexo" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Apellido_P" ColumnName="Apellido_P" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

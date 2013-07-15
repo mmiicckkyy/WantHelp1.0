@@ -7,7 +7,7 @@
         })
     </script>
     <text >
-        <div style="border:0px solid #000;margin:0 auto;width:45px;margin-top:5px;"><a href=""><img src="~/Images/18705272-humanos-iconos-de-gestion-de-recursos.png" /></a></div>
+        <div style="border:0px solid #000;margin:0 auto;width:45px;margin-top:5px;"><a href="perfil/Edit/@Session["idUsuario"]" style="text-decoration:none;color:#414E5E;"><img src="~/Images/18705272-humanos-iconos-de-gestion-de-recursos.png" /><div style="margin:-5px 0px -10px 10px;">@User.Identity.Name</div></a></div>
         <div style="border:0px solid #000;margin:0 auto;text-align:center;">@Html.ActionLink(/*User.Identity.Name*/"Cambiar Password", "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" }) 
         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
         @Html.AntiForgeryToken()

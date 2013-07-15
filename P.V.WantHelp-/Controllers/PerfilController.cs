@@ -81,7 +81,7 @@ namespace P.V.WantHelp_.Controllers
             {
                 db.Entry(usuario).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Details");
+                return RedirectToAction("Details/"+Session["idUsuario"]);
             }
             return View(usuario);
         }

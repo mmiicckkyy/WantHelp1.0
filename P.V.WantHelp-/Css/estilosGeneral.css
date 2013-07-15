@@ -94,6 +94,7 @@
     color: #bed7fc;
 }
 .contenedormenucel {
+    display:none;
     width:0px;
     background:#808080;    
     font-size:0px;
