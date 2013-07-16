@@ -17,6 +17,7 @@ namespace P.V.WantHelp_.Controllers
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
+        private contextodb db = new contextodb();
         //
         // GET: /Account/Login
 
@@ -38,12 +39,20 @@ namespace P.V.WantHelp_.Controllers
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
             {
                 AdminActions contexto = new AdminActions();
+                Usuario mk=new Usuario(); 
                 Session["idUs"] = contexto.getUserId(model.UserName);
+                Session["idUsuario"] = contexto.getUserIdUsuario(Convert.ToInt32(Session["idUs"]));
+                mk.Estado = "conectado";//preguntar al ingeniero
+                //db.Usuario.Add();
+                //db.SaveChanges();//
+                //ViewBag.id = contexto.getUserId(model.UserName);
+                //int idU = Convert.ToInt32(contexto.getUserId(model.UserName));
+               // int idd = Convert.ToInt32(mk.Id_Usu.ToString("idU"));
                 return RedirectToLocal(returnUrl);
             }
 
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "The user name or password provided is incorrect.");
+            ModelState.AddModelError("", "El usuario o password son incorrectos.");
             return View(model);
         }
 
@@ -88,7 +97,7 @@ namespace P.V.WantHelp_.Controllers
                     WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
                     Usuario usuario = new Usuario();
                     UserProfile userserver = new UserProfile();
-                    int o = conex2.webpages_Membership.Count();
+                    int o = conex2.webpages_Membership.Count()+1;
                     Usuario u = new Usuario();
                     u.Nombre = model.Nombres;
                     u.Apellido_P = model.ApellidoP;

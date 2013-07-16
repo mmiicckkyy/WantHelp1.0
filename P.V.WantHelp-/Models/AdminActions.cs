@@ -113,5 +113,9 @@ namespace P.V.WantHelp_.Models
         {
             return userserver.UserProfiles.ToList();
         }
+        internal int getUserIdUsuario(int p)
+        {
+            return server.Usuario.Where(a => a.UserId == p).FirstOrDefault().Id_Usu;
+        }
     }
 }

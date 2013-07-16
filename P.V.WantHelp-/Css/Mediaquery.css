@@ -263,6 +263,7 @@
         left:0px;
         position:absolute;
         z-index:3;
+        display:inline-block;
     }
     .menucursoscel {        
         width:50px;
