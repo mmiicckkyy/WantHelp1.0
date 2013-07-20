@@ -125,6 +125,7 @@ namespace P.V.WantHelp_.Controllers
         [HttpPost]
         public ActionResult Edit(Material material)
         {
+           
             if (ModelState.IsValid)
             {
                 db.Entry(material).State = EntityState.Modified;
