@@ -261,6 +261,7 @@
           <Property Name="UserId" Type="int" />
           <Property Name="Apellido_P" Type="varchar" MaxLength="50" />
           <Property Name="Estado" Type="varchar" MaxLength="15" />
+          <Property Name="Avatar" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="webpages_Membership">
           <Key>
@@ -873,8 +874,9 @@
           <Property Name="UserId" Type="Int32" />
           <Property Name="Apellido_P" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="Estado" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Avatar" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idUs__5070F446" FromRole="Usuario" ToRole="archivos" />
-          <NavigationProperty Name="avatar" Relationship="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" FromRole="Usuario" ToRole="avatar" />
+          <NavigationProperty Name="avatar1" Relationship="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" FromRole="Usuario" ToRole="avatar" />
           <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565" FromRole="Usuario" ToRole="Comentarios" />
           <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__2F10007B" FromRole="Usuario" ToRole="inscripcion" />
           <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__5629CD9C" FromRole="Usuario" ToRole="Material" />
@@ -1366,6 +1368,7 @@
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="Apellido_P" ColumnName="Apellido_P" />
                 <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

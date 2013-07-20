@@ -17,7 +17,7 @@ namespace P.V.WantHelp_.Models
         public Usuario()
         {
             this.archivos = new HashSet<archivos>();
-            this.avatar = new HashSet<avatar>();
+            this.avatar1 = new HashSet<avatar>();
             this.Comentarios = new HashSet<Comentarios>();
             this.inscripcion = new HashSet<inscripcion>();
             this.Material = new HashSet<Material>();
@@ -37,9 +37,10 @@ namespace P.V.WantHelp_.Models
         public Nullable<int> UserId { get; set; }
         public string Apellido_P { get; set; }
         public string Estado { get; set; }
+        public string Avatar { get; set; }
     
         public virtual ICollection<archivos> archivos { get; set; }
-        public virtual ICollection<avatar> avatar { get; set; }
+        public virtual ICollection<avatar> avatar1 { get; set; }
         public virtual ICollection<Comentarios> Comentarios { get; set; }
         public virtual ICollection<inscripcion> inscripcion { get; set; }
         public virtual ICollection<Material> Material { get; set; }
