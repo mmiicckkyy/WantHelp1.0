@@ -43,6 +43,7 @@ namespace P.V.WantHelp_.Controllers
                 Session["idUs"] = contexto.getUserId(model.UserName);
                 Session["idUsuario"] = contexto.getUserIdUsuario(Convert.ToInt32(Session["idUs"]));
                 mk.Estado = "conectado";//preguntar al ingeniero
+                ViewBag.foto = mk.Avatar;
                 //db.Usuario.Add();
                 //db.SaveChanges();//
                 //ViewBag.id = contexto.getUserId(model.UserName);
@@ -105,7 +106,7 @@ namespace P.V.WantHelp_.Controllers
                     u.sexo = model.Sexo;
                     u.email = model.Email;
                     u.UserId = o;
-
+                    u.Avatar = "A-usuario.png";
                     conex2.Usuario.Add(u);
                     conex2.SaveChanges();
                     WebSecurity.Login(model.UserName, model.Password);

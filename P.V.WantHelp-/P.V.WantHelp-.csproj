@@ -248,6 +248,8 @@
       <DependentUpon>conexionModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Utils\Permisos.cs" />
+    <Content Include="Avatar\A-usuario.png" />
+    <Content Include="Avatar\can-stock-photo_csp5866736.jpg" />
     <Content Include="cssInk\css\docs.css" />
     <Content Include="cssInk\css\ink-ie7-min.css" />
     <Content Include="cssInk\css\ink-ie7.css" />

@@ -5,8 +5,9 @@
 }
 
 <h2>Editar Usuario</h2>
+<form action="/Perfil/Edit" method="post"" enctype="multipart/form-data">
 
-@using (Html.BeginForm()) {
+
     @Html.ValidationSummary(true)
 
     <fieldset>
@@ -18,6 +19,13 @@
         <div class="editor-field" style="display:none;">
             @Html.EditorFor(model => model.Id_Usu)
             @Html.ValidationMessageFor(model => model.Id_Usu)
+        </div>
+
+        <div class="editor-label" >
+            @Html.LabelFor(model => model.Avatar)
+        </div>
+        <div class="editor-label" >
+            <input type="file" id="imagen" name="imagen" style="width:auto; "/>            
         </div>
 
         <div class="editor-label">
@@ -73,8 +81,7 @@
             <input type="submit" value="Guardar" />
         </p>
     </fieldset>
-}
-
+</form>
 <div>
     @Html.ActionLink("Detalle", "Details", new {id=Model.Id_Usu})<!--esta parte hay q arreglar-->
     @Html.ActionLink("Atrássss", "Index","Home")    

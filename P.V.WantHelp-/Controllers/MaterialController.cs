@@ -20,6 +20,8 @@ namespace P.V.WantHelp_.Controllers
         public ActionResult Index()
         {
             var material = db.Material.Include(m => m.Cursos).Include(m => m.Usuario);
+            //Usuario usuario = db.Usuario.Find(Convert.ToInt32(Session["idus"]));
+            //ViewBag.foto = usuario.Avatar;
             return View(material.ToList());
         }
 

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
+//using System;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -31,6 +33,7 @@ namespace P.V.WantHelp_.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.foto = usuario.Avatar;
             return View(usuario);
         }
 
@@ -75,11 +78,27 @@ namespace P.V.WantHelp_.Controllers
         // POST: /Perfil/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(Usuario usuario)
+        public ActionResult Edit(Usuario usuario,HttpPostedFileBase imagen)
         {
             if (ModelState.IsValid)
             {
+
+                //HttpFileCollectionBase datos = Request.Files;
+                   
                 db.Entry(usuario).State = EntityState.Modified;
+                if (imagen != null)
+                {
+                    var data = new byte[imagen.ContentLength];
+                    imagen.InputStream.Read(data, 0, imagen.ContentLength);
+                    var path = ControllerContext.HttpContext.Server.MapPath("/Avatar");
+                    //var filemane = Path.Combine(path, Path.GetFileName(imagen.FileName));
+                    var filename2 = Path.GetFileName(imagen.FileName);
+                    string ruta = Server.MapPath("Avatar" + filename2);
+                    imagen.SaveAs(path+filename2);
+                    //System.IO.File.WriteAllBytes(Path.Combine(path, filemane), data);
+                    usuario.Avatar = "../../Avatar" + imagen.FileName;                    
+                }
+                ViewBag.foto=usuario.Avatar;
                 db.SaveChanges();
                 return RedirectToAction("Details/"+Session["idUsuario"]);
             }

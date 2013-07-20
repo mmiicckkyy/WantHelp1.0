@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Detalle</h2>
 
 <fieldset>
     <legend>Usuario</legend>
@@ -15,7 +15,15 @@
     <div class="display-field" style="display:none;">
         @Html.DisplayFor(model => model.Id_Usu)
     </div>
-
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Avatar)
+    </div>
+    <!--<div class="display-field">
+        <img src="~/Avatar/"
+    </div-->
+    @using(Html.BeginForm()){
+        <img src="../../Avatar/@ViewBag.foto" alt="imagen" width="90" />  
+    }
     <div class="display-label">
          @Html.DisplayNameFor(model => model.Nombre)
     </div>
@@ -30,10 +38,10 @@
         @Html.DisplayFor(model => model.Apellido_P)
     </div>
 
-    <div class="display-label">
+    <div class="editor-label">
          @Html.DisplayNameFor(model => model.Apellido_M)
     </div>
-    <div class="display-field">
+    <div class="editor-label">
         @Html.DisplayFor(model => model.Apellido_M)
     </div>
 
@@ -50,7 +58,7 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.sexo)
     </div>
-
+    
     <div class="display-label" style="display:none;">
          @Html.DisplayNameFor(model => model.UserId)
     </div>
