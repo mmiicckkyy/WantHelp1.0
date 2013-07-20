@@ -26,7 +26,6 @@ namespace P.V.WantHelp_.Models
         }
     
         public DbSet<archivos> archivos { get; set; }
-        public DbSet<avatar> avatar { get; set; }
         public DbSet<Comentarios> Comentarios { get; set; }
         public DbSet<Cursos> Cursos { get; set; }
         public DbSet<inscripcion> inscripcion { get; set; }
