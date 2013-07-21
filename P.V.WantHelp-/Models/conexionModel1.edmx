@@ -5,7 +5,7 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="PlataformaVirtualModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityContainer Name="PlataformaVirtualModelStoreContainer">
+       <EntityContainer Name="PlataformaVirtualModelStoreContainer">
           <EntitySet Name="archivos" EntityType="PlataformaVirtualModel.Store.archivos" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Comentarios" EntityType="PlataformaVirtualModel.Store.Comentarios" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Cursos" EntityType="PlataformaVirtualModel.Store.Cursos" store:Type="Tables" Schema="dbo" />
@@ -833,6 +833,14 @@
           <Property Name="Estado" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
           <Property Name="Avatar" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="archivos" Relationship="PlataformaVirtualModel.FK__archivos__idUs__5070F446" FromRole="Usuario" ToRole="archivos" />
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+          <NavigationProperty Name="avatar1" Relationship="PlataformaVirtualModel.FK__avatar__Id_Usu__25869641" FromRole="Usuario" ToRole="avatar" />
+>>>>>>> 2b3343de6868dd236be48b9672a9197b3d7f4917
+>>>>>>> 8773fa4f186ddfbdf04c4eeb6a666224b92d224e
           <NavigationProperty Name="Comentarios" Relationship="PlataformaVirtualModel.FK__Comentari__Id_Us__66603565" FromRole="Usuario" ToRole="Comentarios" />
           <NavigationProperty Name="inscripcion" Relationship="PlataformaVirtualModel.FK__inscripcio__idUs__2F10007B" FromRole="Usuario" ToRole="inscripcion" />
           <NavigationProperty Name="Material" Relationship="PlataformaVirtualModel.FK__Material__Id_Usu__5629CD9C" FromRole="Usuario" ToRole="Material" />

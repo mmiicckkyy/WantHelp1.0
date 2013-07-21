@@ -4,7 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+<<<<<<< HEAD
       <Diagram DiagramId="1721e3bbbabd48399416365a7d16c712" Name="Diagram1">
+=======
+<<<<<<< HEAD
+      <Diagram DiagramId="2942005a4e19434b84602c3a6f9cbc13" Name="Diagram1">
+>>>>>>> b3e1b6b8a0bc6483487323c45a2fc9f08ecb2c42
         <EntityTypeShape EntityType="PlataformaVirtualModel.archivos" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.Comentarios" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.Cursos" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
@@ -22,6 +27,27 @@
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_OAuthMembership" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_Roles" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_UsersInRoles" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+=======
+      <Diagram DiagramId="394e600214e5462d81e04fbe9bac5e19" Name="Diagram1">
+        <EntityTypeShape EntityType="PlataformaVirtualModel.archivos" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.avatar" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Comentarios" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Cursos" Width="1.5" PointX="1.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.inscripcion" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Material" Width="1.5" PointX="6" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.mensajes" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Preguntas" Width="1.5" PointX="3" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.puntuacionChat" Width="1.5" PointX="8.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.puntuacionRes" Width="1.5" PointX="10.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Respuestas" Width="1.5" PointX="5.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Respuestas_Chat" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.sesiones" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.Usuario" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_Membership" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_OAuthMembership" Width="1.5" PointX="3.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_Roles" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlataformaVirtualModel.webpages_UsersInRoles" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+>>>>>>> 2b3343de6868dd236be48b9672a9197b3d7f4917
         <AssociationConnector Association="PlataformaVirtualModel.FK__archivos__idSe__5165187F" ManuallyRouted="false" />
         <AssociationConnector Association="PlataformaVirtualModel.FK__archivos__idUs__5070F446" ManuallyRouted="false" />
         <AssociationConnector Association="PlataformaVirtualModel.FK__Comentari__Id_Re__6754599E" ManuallyRouted="false" />
