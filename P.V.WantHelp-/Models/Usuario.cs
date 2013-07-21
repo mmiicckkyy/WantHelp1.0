@@ -17,6 +17,10 @@ namespace P.V.WantHelp_.Models
         public Usuario()
         {
             this.archivos = new HashSet<archivos>();
+<<<<<<< HEAD
+=======
+            this.avatar1 = new HashSet<avatar>();
+>>>>>>> 2b3343de6868dd236be48b9672a9197b3d7f4917
             this.Comentarios = new HashSet<Comentarios>();
             this.inscripcion = new HashSet<inscripcion>();
             this.Material = new HashSet<Material>();
@@ -39,6 +43,10 @@ namespace P.V.WantHelp_.Models
         public string Avatar { get; set; }
     
         public virtual ICollection<archivos> archivos { get; set; }
+<<<<<<< HEAD
+=======
+        public virtual ICollection<avatar> avatar1 { get; set; }
+>>>>>>> 2b3343de6868dd236be48b9672a9197b3d7f4917
         public virtual ICollection<Comentarios> Comentarios { get; set; }
         public virtual ICollection<inscripcion> inscripcion { get; set; }
         public virtual ICollection<Material> Material { get; set; }

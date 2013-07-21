@@ -22,9 +22,9 @@
         <img src="~/Avatar/"
     </div-->
     @using(Html.BeginForm()){
-        <img src="../../Avatar/@ViewBag.foto" alt="imagen" width="90" />  
+        <img src="~/Avatar/@ViewBag.foto" alt="imagen" width="90" />  
     }
-    <div class="display-label">
+    <div class="display-label">        
          @Html.DisplayNameFor(model => model.Nombre)
     </div>
     <div class="display-field">
